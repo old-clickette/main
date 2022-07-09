@@ -6,6 +6,8 @@
   <h1 style="text-align: center; font-family: 'Arial', sans-serif">Error 404 - Page Not Found</h1>
   <p style="text-align: center; font-family: 'Arial', sans-serif">Redirecting to the homepage in 5 seconds</p>
   <script>
-    setTimeout(document.location.replace('/');, 5000);
+      setTimeout(function() {
+      window.location.href = '/';
+    }, 5000);
   </script>
 </body>
