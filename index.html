@@ -37,6 +37,13 @@ text-align: center;
 .mobile-layout {
 width: 70% !important;
 }
+.unselectable {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+user-select: none;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -44,7 +51,7 @@ width: 70% !important;
 <title>Clickette - The Web, Uncensored</title>
 </head>
 <body>
-<br><br><br><br><br>
+<div class="unselectable"><br><br><br><br><br></div>
 <div class="a" style="background-size: cover;">
 <img src="assets/logo.png" alt="Clickette Logo" style="max-width: 100%; width: 35%;" id="logo">
 </div>
