@@ -1,1 +1,1 @@
-Main site, NEVER push directly to this branch.
+Main site, NEVER push directly to this repo.
