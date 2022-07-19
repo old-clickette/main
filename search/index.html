@@ -59,11 +59,11 @@ return sParameterName[1];
 }
 }
 }
-const gscq = getUrlParameter('gsc.q');
-const gscqf = gscq.replaceAll('+', '%20');
-const gscqfc = decodeURIComponent(gscqf);
-document.getElementById('searchbox').value = gscqfc;
-document.title = gscqfc + " - Clickette Search";
+const q = getUrlParameter('q');
+const qf = q.replaceAll('+', '%20');
+const qfc = decodeURIComponent(qf);
+document.getElementById('searchbox').value = qfc;
+document.title = qfc + " - Clickette Search";
 $(".Post_Description_Text").keydown(function(e){
 if (e.keyCode == 13 && !e.shiftKey)
 {
