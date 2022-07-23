@@ -62,6 +62,26 @@ return sParameterName[1];
 const q = getUrlParameter('q');
 const qf = q.replaceAll('+', '%20');
 const qfc = decodeURIComponent(qf);
+if (q.indexOf('+g!') > -1)
+{
+var g1 = qf.replace('%20g!', '');
+document.location.replace('https://www.google.com/search?q=' + g1);
+} else {
+if (q.indexOf('g!+') > -1)
+{
+var g1 = qf.replace('g!%20', '');
+document.location.replace('https://www.google.com/search?q=' + g1);
+} else {
+if (q.indexOf('+!g') > -1)
+{
+var g1 = qf.replace('%20!g', '');
+document.location.replace('https://www.google.com/search?q=' + g1);
+} else {
+if (q.indexOf('!g+') > -1)
+{
+var g1 = qf.replace('!g%20', '');
+document.location.replace('https://www.google.com/search?q=' + g1);
+}}}}
 document.getElementById('searchbox').value = qfc;
 document.title = qfc + " - Clickette Search";
 $(".Post_Description_Text").keydown(function(e){
