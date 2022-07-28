@@ -62,45 +62,18 @@ return sParameterName[1];
 const q = getUrlParameter('q');
 const qf = q.replaceAll('+', '%20');
 const qfc = decodeURIComponent(qf);
-if (q.indexOf('+g!') > -1)
-{
-var g1 = qf.replace('%20g!', '');
-document.location.replace('https://www.google.com/search?q=' + g1);
-} else {
-if (q.indexOf('g!+') > -1)
-{
-var g1 = qf.replace('g!%20', '');
-document.location.replace('https://www.google.com/search?q=' + g1);
-} else {
-if (q.indexOf('+!g') > -1)
-{
-var g1 = qf.replace('%20!g', '');
-document.location.replace('https://www.google.com/search?q=' + g1);
-} else {
-if (q.indexOf('!g+') > -1)
-{
-var g1 = qf.replace('!g%20', '');
-document.location.replace('https://www.google.com/search?q=' + g1);
-if (q.indexOf('+g%21') > -1)
-{
-var g1 = qf.replace('%20g%21', '');
-document.location.replace('https://www.google.com/search?q=' + g1);
-} else {
-if (q.indexOf('g%21+') > -1)
-{
-var g1 = qf.replace('g%21%20', '');
-document.location.replace('https://www.google.com/search?q=' + g1);
-} else {
-if (q.indexOf('+%21g') > -1)
-{
-var g1 = qf.replace('%20%21g', '');
-document.location.replace('https://www.google.com/search?q=' + g1);
-} else {
-if (q.indexOf('%21g+') > -1)
-{
-var g1 = qf.replace('%21g%20', '');
-document.location.replace('https://www.google.com/search?q=' + g1);
-}}}}}}}}
+//If q includes '+g%21' then it's a google search, so we'll remove it and search for the rest of the query on google
+if (q.includes('+g%21')) {
+//Remove the '+g%21' from the query
+qs = q.replace('+g%21', '');
+//Search for the query on google
+window.location.href = 'https://www.google.com/search?q=' + qs;
+}
+//Do the same with '+g!'
+if (q.includes('+g!')) {
+qs = q.replace('+g!', '');
+window.location.href = 'https://www.google.com/search?q=' + qs;
+}
 document.getElementById('searchbox').value = qfc;
 document.title = qfc + " - Clickette Search";
 $(".Post_Description_Text").keydown(function(e){
