@@ -63,16 +63,20 @@ return sParameterName[1];
 const q = getUrlParameter('q');
 const qf = q.replaceAll('+', '%20');
 const qfc = decodeURIComponent(qf);
-//If q includes '+g%21' then it's a google search, so we'll remove it and search for the rest of the query on google
 if (q.includes('+g%21')) {
-//Remove the '+g%21' from the query
 qs = q.replace('+g%21', '');
-//Search for the query on google
 window.location.href = 'https://www.google.com/search?q=' + qs;
 }
-//Do the same with '+g!'
 if (q.includes('+g!')) {
 qs = q.replace('+g!', '');
+window.location.href = 'https://www.google.com/search?q=' + qs;
+}
+if (q.includes('+%21g')) {
+qs = q.replace('+%21g', '');
+window.location.href = 'https://www.google.com/search?q=' + qs;
+}
+if (q.includes('+!g')) {
+qs = q.replace('+!g', '');
 window.location.href = 'https://www.google.com/search?q=' + qs;
 }
 document.getElementById('searchbox').value = qfc;
