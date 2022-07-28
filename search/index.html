@@ -57,12 +57,21 @@ var sParameterName = sURLVariables[i].split('=');
 if (sParameterName[0] == sParam)
 {
 return sParameterName[1];
-}
-}
-}
+}}}
 const q = getUrlParameter('q');
 const qf = q.replaceAll('+', '%20');
 const qfc = decodeURIComponent(qf);
+checkForBangs();
+document.getElementById('searchbox').value = qfc;
+document.title = qfc + " - Clickette Search";
+$(".Post_Description_Text").keydown(function(e){
+if (e.keyCode == 13 && !e.shiftKey) {
+e.preventDefault();
+document.getElementById("searcharea").submit();
+return false;
+}
+});
+function checkForBangs() {
 if (q.includes('+g%21')) {
 qs = q.replace('+g%21', '');
 window.location.href = 'https://www.google.com/search?q=' + qs;
@@ -79,16 +88,54 @@ if (q.includes('+!g')) {
 qs = q.replace('+!g', '');
 window.location.href = 'https://www.google.com/search?q=' + qs;
 }
-document.getElementById('searchbox').value = qfc;
-document.title = qfc + " - Clickette Search";
-$(".Post_Description_Text").keydown(function(e){
-if (e.keyCode == 13 && !e.shiftKey)
-{
-e.preventDefault();
-document.getElementById("searcharea").submit();
-return false;
+if (q.includes('+b%21')) {
+    qs = q.replace('+b%21', '');
+    window.location.href = 'https://www.bing.com/search?q=' + qs;
+    }
+    if (q.includes('+b!')) {
+    qs = q.replace('+b!', '');
+    window.location.href = 'https://www.bing.com/search?q=' + qs;
+    }
+    if (q.includes('+%21b')) {
+    qs = q.replace('+%21b', '');
+    window.location.href = 'https://www.bing.com/search?q=' + qs;
+    }
+    if (q.includes('+!b')) {
+    qs = q.replace('+!b', '');
+    window.location.href = 'https://www.bing.com/search?q=' + qs;
 }
-});
+if (q.includes('+d%21')) {
+    qs = q.replace('+d%21', '');
+    window.location.href = 'https://www.duckduckgo.com/search?q=' + qs;
+    }
+    if (q.includes('+d!')) {
+    qs = q.replace('+d!', '');
+    window.location.href = 'https://www.duckduckgo.com/search?q=' + qs;
+    }
+    if (q.includes('+%21d')) {
+    qs = q.replace('+%21d', '');
+    window.location.href = 'https://www.duckduckgo.com/search?q=' + qs;
+    }
+    if (q.includes('+!d')) {
+    qs = q.replace('+!d', '');
+    window.location.href = 'https://www.duckduckgo.com/search?q=' + qs;
+    }
+    if (q.includes('+w%21')) {
+    qs = q.replace('+w%21', '');
+    window.location.href = 'https://en.wikipedia.org/wiki/Special:Search?search=' + qs;
+    }
+    if (q.includes('+w!')) {
+    qs = q.replace('+w!', '');
+    window.location.href = 'https://en.wikipedia.org/wiki/Special:Search?search=' + qs;
+    }
+    if (q.includes('+%21w')) {
+    qs = q.replace('+%21w', '');
+    window.location.href = 'https://en.wikipedia.org/wiki/Special:Search?search=' + qs;
+    }
+    if (q.includes('+!w')) {
+    qs = q.replace('+!w', '');
+    window.location.href = 'https://en.wikipedia.org/wiki/Special:Search?search=' + qs;
+}}
 </script>
 </body>
 </html>

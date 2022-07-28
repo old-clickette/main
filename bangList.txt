@@ -1,0 +1,4 @@
+g!/!g = Google
+d!/!d = DuckDuckGo
+b!/!b = Bing
+w!/!w = Wikipedia
