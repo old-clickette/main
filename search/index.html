@@ -133,7 +133,9 @@ background-color: #f2f2f2;
   right: 0;
   /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
 }
-
+.logo123:hover {
+  text-decoration: none;
+}
 #navbar li a:hover:before {
   width: 100%;
   transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
@@ -211,12 +213,12 @@ background-color: #f2f2f2;
 </head>
 <body>
 <script src="https://0p9rr8ddlc4w.statuspage.io/embed/script.js"></script>
-<nav id="navbar" class="">
+<nav id="navbar" class="fixedElement">
 	<div class="nav-wrapper">
 	  <!-- Navbar Logo -->
 	  <div class="logo">
 		<!-- Logo Placeholder for Inlustration -->
-		<a href="/"><img src="/assets/embed.png" width="50">&nbsp</a>
+		<a href="/"><img src="/assets/logo.png" height="50"></a>
 	  </div>
   
 	  <!-- Navbar Links -->
@@ -261,6 +263,16 @@ e.preventDefault();
 document.getElementById("searcharea").submit();
 return false;
 }
+});
+$(window).scroll(function(e){ 
+  var $el = $('.fixedElement'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
 });
 </script>
 </body>
