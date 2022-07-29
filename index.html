@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link type="text/plain" rel="author" href="https://claytontdm.github.io/clickette-temp/humans.txt" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <meta content="Clickette - The Web, Uncensored" property="og:title" />
 <meta content="Clickette is the worlds only uncensored, actually good search engine." property="og:description" />
 <meta content="https://clickette.net/" property="og:url" />
@@ -511,6 +511,16 @@ if (pattern.length === current) {
 }
 };
 document.addEventListener('keydown', keyHandler, false);
+$(window).scroll(function(e){ 
+  var $el = $('.fixedElement'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
+});
 </script>
 </body>
 </html>

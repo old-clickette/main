@@ -3,6 +3,7 @@
 <html lang="en-US">
 <head>
 <meta charset="UTF-8">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <style>
 #navbar {
   background: #f8f8f8;
@@ -244,5 +245,17 @@ Google wants you to think “Incognito Mode” is private. It’s not. Google st
 <span class="site-footer-owner"><a href="https://github.com/clickette/clickette.net">clickette.net</a> is maintained by <a href="https://github.com/claytontdm">ClaytonTDM</a>.</span>
 </footer>
 </main>
+<script>
+$(window).scroll(function(e){ 
+  var $el = $('.fixedElement'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
+});
+</script>
 </body>
 </html>
