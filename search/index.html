@@ -27,7 +27,12 @@ margin-right: auto;
 .btn-secondary, .btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
 background-color: #fd7014 !important;
 outline-color: #fd7014 !important;
-}.form-control:hover, .form-control:active {
+}
+.btn-tetiary,.btn-tetiary:hover,.btn-tetiary:active,.btn-tetiary:visited {
+background-color: #969696 !important;
+border-radius: 0 !important;
+}
+.form-control:hover, .form-control:active {
 background-color: #f2f2f2;
 }
 #navbar {
@@ -231,6 +236,7 @@ background-color: #f2f2f2;
 <form action="/search" id="searcharea">
 <div class="input-group">
 <input type="text" class="form-control Post_Description_Text" name="q" id="searchbox" style="resize: none;" rows="1" placeholder="Search the web...">
+<button class="btn btn-tetiary" type="button"><img src="/assets/mic.png" height="20" id="voice"> </button>
 <div class="input-group-append"> <button class="btn btn-secondary" type="submit"> <i class="fa fa-search"></i> </button> </div>
 </div>
 </form>
@@ -239,6 +245,7 @@ background-color: #f2f2f2;
 <script async src="https://cse.google.com/cse.js?cx=05e63c7384c9442b7"></script>
 <script src="/bangs.js"></script>
 <div class="gcse-searchresults-only"></div>
+<script src="/speech.js"></script>
 <script>
 function getUrlParameter(sParam)
 {
