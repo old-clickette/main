@@ -62,4 +62,20 @@ function checkForBangs() {
         if (q.includes('+!w')) {
         qs = q.replace('+!w', '');
         document.location.replace('https://en.wikipedia.org/wiki/Special:Search?search=' + qs);
+}
+if (q.includes('+e%21')) {
+    qs = q.replace('+e%21', '');
+    document.location.replace('https://www.ecosia.org/search?method=index&q=' + qs);
+    }
+    if (q.includes('+e!')) {
+    qs = q.replace('+e!', '');
+    document.location.replace('https://www.ecosia.org/search?method=index&q=' + qs);
+    }
+    if (q.includes('+%21e')) {
+    qs = q.replace('+%21e', '');
+    document.location.replace('https://www.ecosia.org/search?method=index&q=' + qs);
+    }
+    if (q.includes('+!e')) {
+    qs = q.replace('+!e', '');
+    document.location.replace('https://www.ecosia.org/search?method=index&q=' + qs);
 }}
