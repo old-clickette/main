@@ -2,9 +2,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<link type="text/plain" rel="author" href="https://claytontdm.github.io/clickette-temp/humans.txt" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <meta content="Clickette - The Web, Uncensored" property="og:title" />
 <meta content="Clickette is the worlds only uncensored, actually good search engine." property="og:description" />
 <meta content="https://clickette.net/" property="og:url" />
@@ -28,6 +28,10 @@ margin: 50px auto;
 background-color: #fd7014 !important;
 outline-color: #fd7014 !important;
 }
+.btn-tetiary,.btn-tetiary:hover,.btn-tetiary:active,.btn-tetiary:visited {
+background-color: #969696 !important;
+border-radius: 0 !important;
+}
 .form-control:hover {
 background-color: #f2f2f2;
 }
@@ -44,6 +48,186 @@ width: 70% !important;
 -moz-user-select: none;
 user-select: none;
 }
+#navbar {
+  background: #f8f8f8;
+  color: rgb(255, 255, 255);
+  position: auto;
+  top: 0;
+  height: 60px;
+  line-height: 60px;
+  width: 100vw;
+  z-index: 10;
+}
+
+.nav-wrapper {
+  margin: auto;
+  text-align: center;
+  width: 70%;
+} @media(max-width: 768px) {
+    .nav-wrapper {
+      width: 90%;
+    }
+  } @media(max-width: 638px) {
+      .nav-wrapper {
+        width: 100%;
+      }
+    } 
+
+
+.logo {
+  float: left;
+  margin-left: 28px;
+  font-size: 1.5em;
+  height: 60px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+} @media(max-width: 768px) {
+    .logo {
+/*       margin-left: 5px; */
+    }
+  }
+
+#navbar ul {
+  display: inline-block;
+  float: right;
+  list-style: none;
+  /* margin-right: 14px; */
+  margin-top: -2px;
+  text-align: right;
+  transition: transform 0.5s ease-out;
+  -webkit-transition: transform 0.5s ease-out;
+} @media(max-width: 640px) {
+    #navbar ul {
+      display: none;
+    }
+  } @media(orientation: landscape) {
+      #navbar ul {
+        display: inline-block;
+      }
+    }
+
+#navbar li {
+  display: inline-block;
+}
+
+#navbar li a {
+  color: rgb(0, 0, 0);
+  display: block;
+  font-size: 0.7em;
+  height: 50px;
+  letter-spacing: 1px;
+  margin: 0 20px;
+  padding: 0 4px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+#navbar li a:hover {
+  /* border-bottom: 1px solid rgb(28, 121, 184); */
+  color: rgb(0, 0, 0);
+  transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+}
+
+/* Animated Bottom Line */
+#navbar li a:before, #navbar li a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background: rgb(0, 0, 0);
+}
+
+#navbar li a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+#navbar li a:after {
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+#navbar li a:hover:before {
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+#navbar li a:hover:after {
+  background: transparent;
+  width: 100%;
+  /* transition: 0s; */
+}
+
+
+
+.glyphicon { margin-right:5px; }
+.thumbnail
+{
+    margin-bottom: 20px;
+    padding: 0px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+}
+
+.item.list-group-item
+{
+    float: none;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 10px;
+}
+.item.list-group-item:nth-of-type(odd):hover,.item.list-group-item:hover
+{
+    background: #ffffff;
+}
+
+.item.list-group-item .list-group-image
+{
+    margin-right: 10px;
+}
+.item.list-group-item .thumbnail
+{
+    margin-bottom: 0px;
+}
+.item.list-group-item .caption
+{
+    padding: 9px 9px 0px 9px;
+}
+.item.list-group-item:nth-of-type(odd)
+{
+    background: #eeeeee;
+}
+
+.item.list-group-item:before, .item.list-group-item:after
+{
+    display: table;
+    content: " ";
+}
+
+.item.list-group-item img
+{
+    float: left;
+}
+.item.list-group-item:after
+{
+    clear: both;
+}
+.list-group-item-text
+{
+    margin: 0 0 11px;
+}
+#menu {
+	color: black !important;
+}
+.hidden {
+  display:none;
+}
 </style>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
@@ -51,14 +235,29 @@ user-select: none;
 <title>Clickette - The Web, Uncensored</title>
 </head>
 <body>
-<div class="unselectable"><br><br><br><br><br></div>
+<script src="https://0p9rr8ddlc4w.statuspage.io/embed/script.js"></script>
+<nav id="navbar" class="">
+	<div class="nav-wrapper">
+	  <!-- Navbar Logo -->
+	  <div class="logo">
+		<!-- Logo Placeholder for Inlustration -->
+		<a href="/"><img src="/assets/logo.png" height="50"></a>
+	  </div>
+  
+	  <!-- Navbar Links -->
+	  <ul id="menu">
+	 <li><a href="/about">About</a></li>
+	  </ul>
+	</div>
+  </nav>
+<div class="unselectable"><br><br></div>
 <div class="a" style="background-size: cover;">
 <img src="assets/logo.png" alt="Clickette Logo" style="max-width: 100%; width: 35%;" id="logo">
 </div>
 <div class="main">
-<form action="search" class="da-form" id="da-form">
+<form action="search" class="da-form" id="searcharea">
 <div class="input-group">
-<input type="text" class="form-control" placeholder="Search the web..." name="q">
+<input type="text" class="form-control" placeholder="Search the web..." name="q" id="searchbox">
 <div class="input-group-append"> <button class="btn btn-secondary" type="submit"> <i class="fa fa-search"></i> </button> </div>
 </div>
 </form>
@@ -67,32 +266,32 @@ user-select: none;
 <h3 style="padding-left: 25%; padding-right: 25%;">I have had many people ask me "Does Clickette log your searches?". I can proudly say, no! <strong>Clickette does not log anything.</strong> Period.<br><a href="about"><strong>Learn more</strong></a></h3>
 </div>
 <script type="text/javascript">
-updateLayoutOnPageLoad();
+var navbar = document.getElementById("navbar");
 function enableMobileLayout() {
 var element = document.getElementById("logo");
 element.classList.add("mobile-layout");
+navbar.classList.add("hidden");
 }
 function disableMobileLayout() {
 var element2 = document.getElementById("logo");
 element2.classList.remove("mobile-layout");
+navbar.classList.remove("hidden");
 }
 window.addEventListener("resize", function() {
 if (window.matchMedia("(min-width: 791px)").matches) {
 disableMobileLayout();
-console.log('Desktop Browser Detected; Adjusting Layout')
+console.log('Desktop Browser Detected; Adjusting Layout');
 } else {
 enableMobileLayout();
-console.log('Mobile Browser Detected; Adjusting Layout')
+console.log('Mobile Browser Detected; Adjusting Layout');
 }
 })
-function updateLayoutOnPageLoad() {
 if (window.matchMedia("(min-width: 791px)").matches) {
 disableMobileLayout();
-console.log('Desktop Browser Detected; Adjusting Layout')
+console.log('Desktop Browser Detected; Adjusting Layout');
 } else {
 enableMobileLayout();
-console.log('Mobile Browser Detected; Adjusting Layout')
-}
+console.log('Mobile Browser Detected; Adjusting Layout');
 }
 function springyEmojiCursor(options) {
 let emoji = (options && options.emoji) || "🤪"
@@ -319,6 +518,16 @@ if (pattern.length === current) {
 }
 };
 document.addEventListener('keydown', keyHandler, false);
+$(window).scroll(function(e){ 
+  var $el = $('.fixedElement'); 
+  var isPositionFixed = ($el.css('position') == 'fixed');
+  if ($(this).scrollTop() > 200 && !isPositionFixed){ 
+    $el.css({'position': 'fixed', 'top': '0px'}); 
+  }
+  if ($(this).scrollTop() < 200 && isPositionFixed){
+    $el.css({'position': 'static', 'top': '0px'}); 
+  } 
+});
 </script>
 </body>
 </html>
