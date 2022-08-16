@@ -38,12 +38,9 @@ var navbar = document.getElementById("navbar");
 function enableMobileLayout() {
 var element = document.getElementById("logo");
 element.classList.add("mobile-layout");
-navbar.classList.add("hidden");
-}
 function disableMobileLayout() {
 var element2 = document.getElementById("logo");
 element2.classList.remove("mobile-layout");
-navbar.classList.remove("hidden");
 }
 window.addEventListener("resize", function() {
 if (window.matchMedia("(min-width: 791px)").matches) {
