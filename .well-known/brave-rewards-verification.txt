@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: clickette.net
+Token: b9dd3de97903d604b44cdc157b2408cdfc9cfe2a39426cb9916b177e31955c1b
