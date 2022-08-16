@@ -12,6 +12,9 @@ function getUrlParameter(sParam) {
     if (q === undefined) {
       document.location.replace('/');
     }
+    if (q === '') {
+      document.location.replace('/');
+    }
       const qf = q.replaceAll('+', '%20');
     const qfc = decodeURIComponent(qf);
     checkForBangs();
