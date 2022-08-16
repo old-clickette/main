@@ -8,8 +8,11 @@ function getUrlParameter(sParam) {
     {
     return sParameterName[1];
     }}}
-    const q = getUrlParameter('q');
-    const qf = q.replaceAll('+', '%20');
+    var q = getUrlParameter('q');
+    if (q === undefined) {
+      document.location.replace('/');
+    }
+      const qf = q.replaceAll('+', '%20');
     const qfc = decodeURIComponent(qf);
     checkForBangs();
     document.getElementById('searchbox').value = qfc;
