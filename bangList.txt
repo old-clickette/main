@@ -1,5 +1,10 @@
-g(oogle)!/!g(oogle)
-d(uckduckgo)!/!d(uckduckgo)
-b(ing)!/!b(ing)
-w(ikipedia)!/!w(ikipedia)
-e(cosia)i!/!e(cosia)
+g(oogle)!
+!g(oogle)
+d(uckduckgo)!
+!d(uckduckgo)
+b(ing)!
+!b(ing)
+w(ikipedia)!
+!w(ikipedia)
+e(cosia)i!
+!e(cosia)
