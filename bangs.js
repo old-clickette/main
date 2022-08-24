@@ -1,4 +1,4 @@
-function checkForBangs() {
+function checkForBangs(bangQuery) {
     const bangsMap = [
       ["+g%21", "https://www.google.com/search?q="],
       ["+g!", "https://www.google.com/search?q="],
@@ -89,8 +89,8 @@ function checkForBangs() {
       const searchUrl = bangsMap[ix][1];
   
       // TEST-ME `q` is not defined!!
-      if (q.includes(bang)) {
-        let queryStr = q.replace(bang, "");
+      if (bangQuery.includes(bang)) {
+        let queryStr = bangQuery.replace(bang, "");
         document.location.replace(searchUrl + queryStr);
   
         // Bang replaced successfully, exiting loop & function

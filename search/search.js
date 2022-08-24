@@ -17,7 +17,7 @@ function getUrlParameter(sParam) {
     }
       const qf = q.replaceAll('+', '%20');
     const qfc = decodeURIComponent(qf);
-    checkForBangs();
+    checkForBangs(q);
     document.getElementById('searchbox').value = qfc;
     document.title = qfc + " - Clickette Search";
     $(".Post_Description_Text").keydown(function(e){
