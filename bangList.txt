@@ -1,5 +1,5 @@
-g!/!g = Google
-d!/!d = DuckDuckGo
-b!/!b = Bing
-w!/!w = Wikipedia
-e!/!w = Ecosia
+g(oogle)!/!g(oogle) = Google
+d(uckduckgo)!/!d(uckduckgo) = DuckDuckGo
+b(ing)!/!b(ing) = Bing
+w(ikipedia)!/!w(ikipedia) = Wikipedia
+e(cosia)i!/!e(cosia) = Ecosia
