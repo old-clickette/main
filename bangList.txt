@@ -1,5 +1,5 @@
-g(oogle)!/!g(oogle) = Google
-d(uckduckgo)!/!d(uckduckgo) = DuckDuckGo
-b(ing)!/!b(ing) = Bing
-w(ikipedia)!/!w(ikipedia) = Wikipedia
-e(cosia)i!/!e(cosia) = Ecosia
+g(oogle)!/!g(oogle)
+d(uckduckgo)!/!d(uckduckgo)
+b(ing)!/!b(ing)
+w(ikipedia)!/!w(ikipedia)
+e(cosia)i!/!e(cosia)
