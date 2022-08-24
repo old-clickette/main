@@ -1,1 +1,102 @@
-function checkForBangs(){q.includes("+g%21")&&(qs=q.replace("+g%21",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("+g!")&&(qs=q.replace("+g!",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("+%21g")&&(qs=q.replace("+%21g",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("+!g")&&(qs=q.replace("+!g",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("+b%21")&&(qs=q.replace("+b%21",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("+b!")&&(qs=q.replace("+b!",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("+%21b")&&(qs=q.replace("+%21b",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("+!b")&&(qs=q.replace("+!b",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("+d%21")&&(qs=q.replace("+d%21",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("+d!")&&(qs=q.replace("+d!",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("+%21d")&&(qs=q.replace("+%21d",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("+!d")&&(qs=q.replace("+!d",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("+w%21")&&(qs=q.replace("+w%21",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("+w!")&&(qs=q.replace("+w!",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("+%21w")&&(qs=q.replace("+%21w",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("+!w")&&(qs=q.replace("+!w",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("+e%21")&&(qs=q.replace("+e%21",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("+e!")&&(qs=q.replace("+e!",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("+%21e")&&(qs=q.replace("+%21e",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("+!e")&&(qs=q.replace("+!e",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("g%21+")&&(qs=q.replace("g%21+",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("g!+")&&(qs=q.replace("g!+",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("%21g+")&&(qs=q.replace("%21g+",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("!g+")&&(qs=q.replace("!g+",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("b%21+")&&(qs=q.replace("b%21+",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("b!+")&&(qs=q.replace("b!+",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("%21b+")&&(qs=q.replace("%21b+",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("!b+")&&(qs=q.replace("!b+",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("d%21+")&&(qs=q.replace("d%21+",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("d!+")&&(qs=q.replace("d!+",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("%21d+")&&(qs=q.replace("%21d+",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("!d+")&&(qs=q.replace("!d+",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("w%21+")&&(qs=q.replace("w%21+",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("w!+")&&(qs=q.replace("w!+",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("%21w+")&&(qs=q.replace("%21w+",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("!w+")&&(qs=q.replace("!w+",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("e%21+")&&(qs=q.replace("e%21+",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("e!+")&&(qs=q.replace("e!+",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("%21e+")&&(qs=q.replace("%21e+",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("!e+")&&(qs=q.replace("!e+",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("+g%21")&&(qs=q.replace("+g%21",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("+g!")&&(qs=q.replace("+g!",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("+%21g")&&(qs=q.replace("+%21g",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("+!g")&&(qs=q.replace("+!g",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("+b%21")&&(qs=q.replace("+b%21",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("+b!")&&(qs=q.replace("+b!",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("+%21b")&&(qs=q.replace("+%21b",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("+!b")&&(qs=q.replace("+!b",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("+d%21")&&(qs=q.replace("+d%21",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("+d!")&&(qs=q.replace("+d!",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("+%21d")&&(qs=q.replace("+%21d",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("+!d")&&(qs=q.replace("+!d",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("+w%21")&&(qs=q.replace("+w%21",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("+w!")&&(qs=q.replace("+w!",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("+%21w")&&(qs=q.replace("+%21w",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("+!w")&&(qs=q.replace("+!w",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("+e%21")&&(qs=q.replace("+e%21",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("+e!")&&(qs=q.replace("+e!",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("+%21e")&&(qs=q.replace("+%21e",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("+!e")&&(qs=q.replace("+!e",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("google%21+")&&(qs=q.replace("google%21+",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("google!+")&&(qs=q.replace("google!+",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("%21google+")&&(qs=q.replace("%21google+",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("!google+")&&(qs=q.replace("!google+",""),document.location.replace("https://www.google.com/search?q="+qs)),q.includes("bing%21+")&&(qs=q.replace("bing%21+",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("bing!+")&&(qs=q.replace("bing!+",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("%21bing+")&&(qs=q.replace("%21bing+",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("!bing+")&&(qs=q.replace("!bing+",""),document.location.replace("https://www.bing.com/search?q="+qs)),q.includes("duckduckgo%21+")&&(qs=q.replace("duckduckgo%21+",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("duckduckgo!+")&&(qs=q.replace("duckduckgo!+",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("%21duckduckgo+")&&(qs=q.replace("%21duckduckgo+",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("!duckduckgo+")&&(qs=q.replace("!duckduckgo+",""),document.location.replace("https://duckduckgo.com/?q="+qs)),q.includes("wikipedia%21+")&&(qs=q.replace("wikipedia%21+",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("wikipedia!+")&&(qs=q.replace("wikipedia!+",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("%21wikipedia+")&&(qs=q.replace("%21wikipedia+",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("!wikipedia+")&&(qs=q.replace("!wikipedia+",""),document.location.replace("https://en.wikipedia.org/wiki/Special:Search?search="+qs)),q.includes("ecosia%21+")&&(qs=q.replace("ecosia%21+",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("ecosia!+")&&(qs=q.replace("ecosia!+",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("%21ecosia+")&&(qs=q.replace("%21ecosia+",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs)),q.includes("!ecosia+")&&(qs=q.replace("!ecosia+",""),document.location.replace("https://www.ecosia.org/search?method=index&q="+qs))}
+function checkForBangs() {
+    const bangsMap = [
+      ["+g%21", "https://www.google.com/search?q="],
+      ["+g!", "https://www.google.com/search?q="],
+      ["+%21g", "https://www.google.com/search?q="],
+      ["+!g", "https://www.google.com/search?q="],
+      ["+b%21", "https://www.bing.com/search?q="],
+      ["+b!", "https://www.bing.com/search?q="],
+      ["+%21b", "https://www.bing.com/search?q="],
+      ["+!b", "https://www.bing.com/search?q="],
+      ["+d%21", "https://duckduckgo.com/?q="],
+      ["+d!", "https://duckduckgo.com/?q="],
+      ["+%21d", "https://duckduckgo.com/?q="],
+      ["+!d", "https://duckduckgo.com/?q="],
+      ["+w%21", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["+w!", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["+%21w", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["+!w", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["+e%21", "https://www.ecosia.org/search?method=index&q="],
+      ["+e!", "https://www.ecosia.org/search?method=index&q="],
+      ["+%21e", "https://www.ecosia.org/search?method=index&q="],
+      ["+!e", "https://www.ecosia.org/search?method=index&q="],
+      ["g%21+", "https://www.google.com/search?q="],
+      ["g!+", "https://www.google.com/search?q="],
+      ["%21g+", "https://www.google.com/search?q="],
+      ["!g+", "https://www.google.com/search?q="],
+      ["b%21+", "https://www.bing.com/search?q="],
+      ["b!+", "https://www.bing.com/search?q="],
+      ["%21b+", "https://www.bing.com/search?q="],
+      ["!b+", "https://www.bing.com/search?q="],
+      ["d%21+", "https://duckduckgo.com/?q="],
+      ["d!+", "https://duckduckgo.com/?q="],
+      ["%21d+", "https://duckduckgo.com/?q="],
+      ["!d+", "https://duckduckgo.com/?q="],
+      ["w%21+", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["w!+", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["%21w+", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["!w+", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["e%21+", "https://www.ecosia.org/search?method=index&q="],
+      ["e!+", "https://www.ecosia.org/search?method=index&q="],
+      ["%21e+", "https://www.ecosia.org/search?method=index&q="],
+      ["!e+", "https://www.ecosia.org/search?method=index&q="],
+      ["+g%21", "https://www.google.com/search?q="],
+      ["+g!", "https://www.google.com/search?q="],
+      ["+%21g", "https://www.google.com/search?q="],
+      ["+!g", "https://www.google.com/search?q="],
+      ["+b%21", "https://www.bing.com/search?q="],
+      ["+b!", "https://www.bing.com/search?q="],
+      ["+%21b", "https://www.bing.com/search?q="],
+      ["+!b", "https://www.bing.com/search?q="],
+      ["+d%21", "https://duckduckgo.com/?q="],
+      ["+d!", "https://duckduckgo.com/?q="],
+      ["+%21d", "https://duckduckgo.com/?q="],
+      ["+!d", "https://duckduckgo.com/?q="],
+      ["+w%21", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["+w!", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["+%21w", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["+!w", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["+e%21", "https://www.ecosia.org/search?method=index&q="],
+      ["+e!", "https://www.ecosia.org/search?method=index&q="],
+      ["+%21e", "https://www.ecosia.org/search?method=index&q="],
+      ["+!e", "https://www.ecosia.org/search?method=index&q="],
+      ["google%21+", "https://www.google.com/search?q="],
+      ["google!+", "https://www.google.com/search?q="],
+      ["%21google+", "https://www.google.com/search?q="],
+      ["!google+", "https://www.google.com/search?q="],
+      ["bing%21+", "https://www.bing.com/search?q="],
+      ["bing!+", "https://www.bing.com/search?q="],
+      ["%21bing+", "https://www.bing.com/search?q="],
+      ["!bing+", "https://www.bing.com/search?q="],
+      ["duckduckgo%21+", "https://duckduckgo.com/?q="],
+      ["duckduckgo!+", "https://duckduckgo.com/?q="],
+      ["%21duckduckgo+", "https://duckduckgo.com/?q="],
+      ["!duckduckgo+", "https://duckduckgo.com/?q="],
+      ["wikipedia%21+", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["wikipedia!+", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["%21wikipedia+", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["!wikipedia+", "https://en.wikipedia.org/wiki/Special:Search?search="],
+      ["ecosia%21+", "https://www.ecosia.org/search?method=index&q="],
+      ["ecosia!+", "https://www.ecosia.org/search?method=index&q="],
+      ["%21ecosia+", "https://www.ecosia.org/search?method=index&q="],
+      ["!ecosia+", "https://www.ecosia.org/search?method=index&q="],
+    ];
+  
+    // Loop over all of the bangsMap
+    for (let ix = 0; ix < bangsMap.length; ix++) {
+      // Unpack pairs into ['bang', 'searchUrl']
+      const bang = bangsMap[ix][0];
+      const searchUrl = bangsMap[ix][1];
+  
+      // TEST-ME `q` is not defined!!
+      if (q.includes(bang)) {
+        let queryStr = q.replace(bang, "");
+        document.location.replace(searchUrl + queryStr);
+  
+        // Bang replaced successfully, exiting loop & function
+        return true; 
+      }
+    }
+    // No bang replaced
+    return false;
+  }
