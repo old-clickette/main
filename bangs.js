@@ -89,6 +89,6 @@ function checkForBangs(bangQuery) {
         return true; 
       }
     }
-    console.warning('No bang query defined, check https://raw.githubusercontent.com/clickette/clickette.net/main/bangList.txt for a list. Defaulting to Clickette web search.');
+    console.warn('No bang query defined, check https://raw.githubusercontent.com/clickette/clickette.net/main/bangList.txt for a list. Defaulting to Clickette web search.');
     return false;
   }
