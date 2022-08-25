@@ -62,11 +62,8 @@ enableMobileLayout();
 })
 if (window.matchMedia("(min-width: 791px)").matches) {
 disableMobileLayout();
-console.log('Desktop Browser Detected; Adjusting Layout');
 } else {
-enableMobileLayout();
-console.log('Mobile Browser Detected; Adjusting Layout');
-}
+enableMobileLayout();}
 function springyEmojiCursor(options) {
 let emoji = (options && options.emoji) || "🤪"
 let hasWrapperEl = options && options.element
