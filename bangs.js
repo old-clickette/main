@@ -79,24 +79,16 @@ function checkForBangs(bangQuery) {
       ["ecosia%21+", "https://www.ecosia.org/search?method=index&q="],
       ["ecosia!+", "https://www.ecosia.org/search?method=index&q="],
       ["%21ecosia+", "https://www.ecosia.org/search?method=index&q="],
-      ["!ecosia+", "https://www.ecosia.org/search?method=index&q="],
     ];
-  
-    // Loop over all of the bangsMap
     for (let ix = 0; ix < bangsMap.length; ix++) {
-      // Unpack pairs into ['bang', 'searchUrl']
       const bang = bangsMap[ix][0];
       const searchUrl = bangsMap[ix][1];
-  
-      // TEST-ME `q` is not defined!!
       if (bangQuery.includes(bang)) {
         let queryStr = bangQuery.replace(bang, "");
         document.location.replace(searchUrl + queryStr);
-  
-        // Bang replaced successfully, exiting loop & function
         return true; 
       }
     }
-    // No bang replaced
+    console.warning('No bang query defined, check https://raw.githubusercontent.com/clickette/clickette.net/main/bangList.txt for a list. Defaulting to Clickette web search.');
     return false;
   }
