@@ -34,17 +34,24 @@
 </form>
 </div>
 <div class="centre">
-	<h3 style="padding-left: 25%; padding-right: 25%;"><strong>Your personal data is nobody’s business. For everyone who’s had enough of online tracking, Clickette lets you take back your online privacy now.</strong><br><a href="about"><strong>Learn more</strong></a></h3>
+	<h3 style="padding-left: 25%; padding-right: 25%;"><div id="addonText"><strong>Your personal data is nobody’s business. For everyone who’s had enough of online tracking, Clickette lets you take back your online privacy now.</strong><br></div><a href="about"><div id="aboutText"><strong>Learn more</strong></div></a></h3>
 </div>
 <script type="text/javascript">
-var navbar = document.getElementById("navbar");
 function enableMobileLayout() {
-var element = document.getElementById("logo");
-element.classList.add("mobile-layout");
+var logo = document.getElementById("logo");
+var addonText = document.getElementById("addonText");
+var aboutText = document.getElementById("aboutText");
+addonText.classList.add("hidden");
+logo.classList.add("mobile-layout");
+aboutText.innerHTML = "<strong>About Clickette</strong>";
 }
 function disableMobileLayout() {
-var element2 = document.getElementById("logo");
-element2.classList.remove("mobile-layout");
+var logo2 = document.getElementById("logo");
+var addonText = document.getElementById("addonText");
+var aboutText = document.getElementById("aboutText");
+addonText.classList.remove("hidden");
+logo2.classList.remove("mobile-layout");
+aboutText.innerHTML = "<strong>Learn More</strong>";
 }
 window.addEventListener("resize", function() {
 if (window.matchMedia("(min-width: 791px)").matches) {
