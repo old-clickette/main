@@ -1,0 +1,1 @@
+1. Put all resource files (.js, .css) into "Assets" folder instead of root
