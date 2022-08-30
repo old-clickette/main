@@ -60,6 +60,10 @@ function checkForBangs(bangQuery) {
       ["+e!", "https://www.ecosia.org/search?method=index&q="],
       ["+%21e", "https://www.ecosia.org/search?method=index&q="],
       ["+!e", "https://www.ecosia.org/search?method=index&q="],
+      ["+yt%21", "https://www.youtube.com/results?search_query="],
+      ["+yt!", "https://www.youtube.com/results?search_query="],
+      ["+%21yt", "https://www.youtube.com/results?search_query="],
+      ["+!yt", "https://www.youtube.com/results?search_query="],
       ["google%21+", "https://www.google.com/search?q="],
       ["google!+", "https://www.google.com/search?q="],
       ["%21google+", "https://www.google.com/search?q="],
@@ -79,6 +83,10 @@ function checkForBangs(bangQuery) {
       ["ecosia%21+", "https://www.ecosia.org/search?method=index&q="],
       ["ecosia!+", "https://www.ecosia.org/search?method=index&q="],
       ["%21ecosia+", "https://www.ecosia.org/search?method=index&q="],
+      ["+youtube%21", "https://www.youtube.com/results?search_query="],
+      ["+youtube!", "https://www.youtube.com/results?search_query="],
+      ["+%21youtube", "https://www.youtube.com/results?search_query="],
+      ["+!youtube", "https://www.youtube.com/results?search_query="],
     ];
     for (let ix = 0; ix < bangsMap.length; ix++) {
       const bang = bangsMap[ix][0];

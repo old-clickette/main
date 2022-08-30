@@ -8,3 +8,7 @@ w(ikipedia)!
 !w(ikipedia)
 e(cosia)i!
 !e(cosia)
+!yt
+yt!
+!youtube
+youtube!
