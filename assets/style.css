@@ -1,4 +1,11 @@
-@import url('http://fonts.cdnfonts.com/css/gotham?styles=17585');
+@font-face {
+  font-family: 'Gotham';
+  font-style: normal;
+  font-weight: 500;
+  src: local('Gotham'), url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
+}
+
+
 * {
     font-family: 'Gotham', sans-serif;
   }
