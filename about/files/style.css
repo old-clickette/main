@@ -1,12 +1,19 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
-
-html {
-    font-family: sans-serif;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%
-}
-
+@font-face {
+    font-family: 'Gotham';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Gotham'), url('https://fonts.cdnfonts.com/s/14898/GothamBook.woff') format('woff');
+  }
+  @font-face {
+    font-family: 'Gotham';
+    font-style: bold;
+    font-weight: 500;
+    src: local('Gotham'), url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
+  }
+  * {
+      font-family: 'Gotham', sans-serif;
+    }
 body {
     margin: 0
 }
