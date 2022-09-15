@@ -37,7 +37,7 @@
 </form>
 </div>
 <div class="centre">
-	<h3 style="padding-left: 25%; padding-right: 25%;"><div id="addonText">Introducing our newest product, <a href="https://www.proxwall.ga/"><strong>ProxWall</strong></a>! ProxWall is a secure web proxy service supporting numerous sites while concentrating on detail with design, mechanics, and features.<br></div><a href="about"><br><div id="aboutText"><strong>About Clickette</strong></div></a></h3>
+	<h3 style="padding-left: 25%; padding-right: 25%;"><div id="addonText"><br></div><a href="about"><br><div id="aboutText"><strong>About Clickette</strong></div></a></h3>
 </div>
 <script type="text/javascript">
 function enableMobileLayout() {
@@ -55,6 +55,30 @@ var aboutText = document.getElementById("aboutText");
 addonText.classList.remove("hidden");
 logo2.classList.remove("mobile-layout");
 aboutText.innerHTML = "<strong>About Clickette</strong>";
+}
+var limit = 1;
+$.ajax({
+    method: 'GET',
+    url: 'https://api.api-ninjas.com/v1/facts?limit=' + limit,
+    headers: { 'X-Api-Key': '1HHHukaNEC5Kh3iDOLeZjQ==nxxKAnwy9XbK9bYM'},
+    contentType: 'application/json',
+    success: function(result) {
+    printParsedFact(JSON.stringify(result));
+    },
+    error: function ajaxError(jqXHR) {
+        console.error('Error: ', jqXHR.responseText);
+    }
+});
+function printParsedFact(string) {
+    const txt = string;
+    var txt1 = txt.replace("[", "");
+        var txt2 = txt1.replace("]", "");
+    
+var obj = JSON.parse(txt2);
+const fact = obj.fact;
+    console.log(fact);
+    addontext1 = document.getElementById('addonText');
+    addontext1.innerHTML = '<h3>' + fact + '</h3>';
 }
 window.addEventListener("resize", function() {
 if (window.matchMedia("(min-width: 791px)").matches) {
