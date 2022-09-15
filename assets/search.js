@@ -19,6 +19,9 @@ function getUrlParameter(sParam) {
     const qfc = decodeURIComponent(qf);
     checkForBangs(q);
     document.getElementById('searchbox').value = qfc;
+    window.addEventListener('popstate', function (event) {
+      document.getElementById('searchbox').value = qfc;
+    });
     document.title = qfc + " - Clickette Search";
     $(".Post_Description_Text").keydown(function(e){
     if (e.keyCode == 13 && !e.shiftKey) {
