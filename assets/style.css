@@ -1,6 +1,7 @@
+@import url('http://fonts.cdnfonts.com/css/gotham?styles=17585');
 * {
-    font-family: 'Arial', sans-serif;
-    }
+    font-family: 'Gotham', sans-serif;
+  }
     .centre {
     display: block;
     margin-left: auto;
