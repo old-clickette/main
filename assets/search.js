@@ -22,7 +22,7 @@ function getUrlParameter(sParam) {
     window.addEventListener('popstate', function (event) {
       document.getElementById('searchbox').value = qfc;
     });
-    setTimeout("ocument.getElementById('searchbox').value = qfc;", 1500)
+    setTimeout("ocument.getElementById('searchbox').value = qfc;", 1500);
     document.title = qfc + " - Clickette Search";
     $(".Post_Description_Text").keydown(function(e){
     if (e.keyCode == 13 && !e.shiftKey) {
