@@ -20,9 +20,19 @@ function getUrlParameter(sParam) {
     checkForBangs(q);
     document.getElementById('searchbox').value = qfc;
     window.addEventListener('popstate', function (event) {
-      document.getElementById('searchbox').value = qfc;
+
+      q = getUrlParameter('q');
+    if (q === undefined) {
+      document.location.replace('/');
+    }
+    if (q === '') {
+      document.location.replace('/');
+    }
+      qf = q.replaceAll('+', '%20');
+    qfc = decodeURIComponent(qf);
+    checkForBangs(q);
+    document.getElementById('searchbox').value = qfc;
     });
-    setTimeout("document.getElementById('searchbox').value = qfc;", 1500);
     document.title = qfc + " - Clickette Search";
     $(".Post_Description_Text").keydown(function(e){
     if (e.keyCode == 13 && !e.shiftKey) {
