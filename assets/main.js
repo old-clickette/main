@@ -36,7 +36,7 @@ function enableMobileLayout() {
     const fact = obj.fact;
         console.log("Did you know: " + fact);
         addontext1 = document.getElementById('addonText');
-        addontext1.innerHTML = '<h3>Did you know? ' + fact + '.</h3>';
+        addontext1.innerHTML = '<h3>Did you know? ' + fact + '</h3>';
     }
     window.addEventListener("resize", function() {
     if (window.matchMedia("(min-width: 791px)").matches) {
