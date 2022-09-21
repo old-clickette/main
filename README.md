@@ -1,5 +1,6 @@
 # Clickette
 <img src="https://img.shields.io/github/languages/count/clickette/main?style=for-the-badge"> <img src="https://img.shields.io/github/stars/clickette/main?style=for-the-badge">
+
 Your personal data is nobody's business.
 For everyone who’s had enough of online tracking, Clickette lets you take back your online privacy now.
 ## A little about us.
