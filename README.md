@@ -1,5 +1,5 @@
 # Clickette
-![GitHub language count](https://img.shields.io/github/languages/count/clickette/main?style=for-the-badge) ![GitHub top language](https://img.shields.io/badge/TOP%20LANGUAGE-HTML-orange?style=for-the-badge)
+[![GitHub language count](https://img.shields.io/github/languages/count/clickette/main?style=for-the-badge)](https://google.com/) ![GitHub top language](https://img.shields.io/badge/TOP%20LANGUAGE-HTML-orange?style=for-the-badge)
 
 Your personal data is nobody's business.
 For everyone who’s had enough of online tracking, Clickette lets you take back your online privacy now.
