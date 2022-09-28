@@ -15,6 +15,9 @@
 .gsc-control-cse-en {
   padding: 0px !important;
 }
+.gsc-selected-option-container {
+  background-image: none !important;
+}
 * {
     font-family: 'Gotham', sans-serif;
   }
