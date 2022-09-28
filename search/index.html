@@ -3,11 +3,6 @@
 <head>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
 <meta charset="UTF-8">
-<style>
-    .flex-container {
-vertical-align: middle;
-}
-</style>
 <script src="https://www.google.com/recaptcha/api.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -25,10 +20,12 @@ vertical-align: middle;
     
 <script src="/assets/bangs.js"></script>
 <script src="https://0p9rr8ddlc4w.statuspage.io/embed/script.js"></script>
-<div class="main" class="flex-container">
+<div class="main">
 <form action="/search" id="searcharea">
-    <div class="input-group" style="padding-left: 30px; padding-right: 30px;" class="input-group"><a href="/"><img src="/assets/img/logo.png" style="padding-top: 16px; padding-bottom: 16px;" height="80"></a>
-        <div style="width:50%;"><input type="text" class="form-control Post_Description_Text" name="q" id="searchbox" style="resize: none; vertical-align: middle; width:50% !important;" rows="1" placeholder="Search the web..."><button class="btn btn-secondary" type="submit" style="height:38px;width:40.86px;margin-left: -50px;"> <i class="fa fa-search"></i> </button></div></div> </div></div></div>
+<div class="input-group" style="padding-left: 16.5px; padding-right: 16.5px;">
+    <a href="/"><img src="/assets/img/logo.png" class="centre" style="padding-top: 16px; padding-bottom: 16px;" height="80"></a><input type="text" class="form-control Post_Description_Text" name="q" id="searchbox" style="resize: none;" rows="1" placeholder="Search the web...">
+<div class="input-group-append"> <button class="btn btn-secondary" type="submit"> <i class="fa fa-search"></i> </button> </div>
+</div>
 </form>
 </div>
 <script async src="https://cse.google.com/cse.js?cx=05e63c7384c9442b7"></script>
