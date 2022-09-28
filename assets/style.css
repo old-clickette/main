@@ -13,7 +13,7 @@
   font-display: swap;
 }
 .gsc-control-cse {
-  padding-top:0px;
+  padding-top:0px !important;
 }
 * {
     font-family: 'Gotham', sans-serif;
