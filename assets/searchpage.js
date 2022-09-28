@@ -44,7 +44,7 @@ function getUrlParameter(sParam) {
       if ($(this).scrollTop() < 200 && isPositionFixed){
         $el.css({'position': 'static', 'top': '0px'}); 
       }});
-      if (window.matchMedia("(min-width: 791px)").matches) {
+      if (window.matchMedia("(min-width: 937px)").matches) {
       console.log('Device: Desktop')
       } else {
       console.log('Device: Mobile');
