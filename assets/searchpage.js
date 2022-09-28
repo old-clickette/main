@@ -44,19 +44,24 @@ function getUrlParameter(sParam) {
       if ($(this).scrollTop() < 200 && isPositionFixed){
         $el.css({'position': 'static', 'top': '0px'}); 
       }});
+      // heres where the funky shit happens
+      console.log('here');
     window.addEventListener("resize", function() {
       if (window.matchMedia("(min-width: 791px)").matches) {
       disableMobileLayout();
       } else {
       enableMobileLayout();}
       })
+
       if (window.matchMedia("(min-width: 791px)").matches) {
       disableMobileLayout();
       } else {
       enableMobileLayout();}
+
       function enableMobileLayout() {
-        var daform = document.getElementById("searcharea");
+        var daform = document.getElementById("");
         daform.classList.add("mobile-da-form");}
+        
         function disableMobileLayout() {
-          var daform = document.getElementById("searcharea");
+          var daform = document.getElementById("");
           daform.classList.remove("mobile-da-form");}
