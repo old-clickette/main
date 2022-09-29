@@ -114,6 +114,9 @@ a.gsc-trailing-more-results:link{
 .gs-promotion .gs-snippet,.gs-promotion .gs-title .gs-promotion-title-right,.gs-promotion .gs-title .gs-promotion-title-right .gsc-selected-option *{
     color:#EEEEEE
 }
+.gsc-selected-option {
+    color: #EEEEEE;
+}
 .gs-promotion .gs-visibleUrl,.gs-promotion .gs-visibleUrl-short{
     color:#009933
 }
