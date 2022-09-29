@@ -24,6 +24,17 @@
 * {
     font-family: 'Gotham', sans-serif;
   }
+  body {
+    background-color: #202124;
+  }
+  .form-control, .form-control:focus {
+    background-color: #26272b;
+    border-color: #222427;
+    color: #eee;
+  }
+  h3 {
+    color: #eee;
+  }
     .centre {
     display: block;
     margin-left: auto;
@@ -42,7 +53,7 @@
     border-radius: 0 !important;
     }
     .form-control:hover {
-    background-color: #f2f2f2;
+    background-color: #2b2c30 !important;
     }
     .a {
     text-align: center;
