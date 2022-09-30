@@ -12,6 +12,7 @@
     src: local('Gotham'), url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
     font-display: swap;
   }
+  *:not(hr, .gsc-tabHeader) { border: 0px !important; }
 .gsc-control-cse{
     font-family:Gotham, sans-serif
 }
