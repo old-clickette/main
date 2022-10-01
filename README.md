@@ -1,8 +1,7 @@
 # Clickette
 [![GitHub language count](https://img.shields.io/github/languages/count/clickette/main?style=for-the-badge)](#clickette) [![GitHub top language](https://img.shields.io/badge/TOP%20LANGUAGE-HTML-orange?style=for-the-badge)](#clickette)
 
-Your personal data is nobody's business.
-For everyone who’s had enough of online tracking, Clickette lets you take back your online privacy now.
+Looking to escape the trackers? Clickette is your #1 solution to stay private online.
 ## A little about us.
 Clickette is the worlds best privacy search engine, that aims to keep our users fully protected.
 We never store ANY user data, and never will. On Clickette, there are 0 logs of website visits or searches, and we aim to keep it that way.
