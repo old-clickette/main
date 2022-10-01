@@ -11,5 +11,5 @@ On Clickette, there are no search histories and no user profiling. This means yo
 - **“Incognito Mode” isn't private.**
 Google wants you to think “Incognito Mode” is private. It's not. Google still tracks every search you make and most websites you visit in Incognito Mode. Clickette doesn't track you, ever.
 ## Spread the Word!
-Most Internet users are actively trying to improve their online privacy, help them out by sharing Clickette on your favorite social network.
-Find us at [https://clickette.net/](https://clickette.net/).
+<p>Most Internet users are actively trying to improve their online privacy, help them out by sharing Clickette on your favorite social network.
+Check us out on Twitter: <a href="https://twitter.com/clickettedev/"><strong>@clickettedev</strong></a>, and on our website: <a href="https://twitter.com/clickettedev/"><strong>clickette.net</strong></a> .</p>
