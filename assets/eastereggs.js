@@ -199,14 +199,15 @@ function springyEmojiCursor(options) {
     month: 3,
     date: 1
     }
-    var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
+    var utc = "2023/04/01"/*new Date().toJSON().slice(0,10).replace(/-/g,'/');*/;
     if(utc == "2023/04/01"){
+    document.getElementById("logo").src = "/assets/img/april_fools.png";
     new springyEmojiCursor();
     }
     function forceSpecialDate() {
     new springyEmojiCursor();
     }
-    var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
+    var pattern = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a', 'Enter'];
     var current = 0;
     var keyHandler = function (event) {
     if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
@@ -216,6 +217,8 @@ function springyEmojiCursor(options) {
     current++;
     if (pattern.length === current) {
         current = 0;
-        document.location.replace('https://youtu.be/jeg_TJvkSjg/');
     }
     };
+
+
+    

@@ -13,7 +13,10 @@
   font-display: swap;
 }
 input[type=search] {-webkit-appearance: none !important;} input[type=search]::-webkit-search-cancel-button {-webkit-appearance:  none !important;}
-
+#container {
+  top: 10%;
+  bottom: 10%;
+}
 input[type="search"]::-webkit-search-cancel-button {
   height: 24px;
   width: 24px;
@@ -254,4 +257,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .hidden {
       display:none;
+    }
+    #container {
+      position: fixed;
     }
