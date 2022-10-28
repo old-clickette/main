@@ -199,7 +199,7 @@ function springyEmojiCursor(options) {
     month: 3,
     date: 1
     }
-    var utc = "2023/04/01"/*new Date().toJSON().slice(0,10).replace(/-/g,'/');*/;
+    var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
     if(utc == "2023/04/01"){
     document.getElementById("logo").src = "/assets/img/april_fools.png";
     new springyEmojiCursor();
