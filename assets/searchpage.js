@@ -31,12 +31,6 @@ $(".Post_Description_Text").keydown(function (e) {
   }
 });
 const queryString = window.location.search;
-if (queryString.includes("?raw=true")) {
-  document.location.replace("/search/raw?q=" + q);
-}
-if (queryString.includes("&raw=true")) {
-  document.location.replace("/search/raw?q=" + q);
-}
 $(window).scroll(function (e) {
   var $el = $('.fixedElement');
   var isPositionFixed = ($el.css('position') == 'fixed');
