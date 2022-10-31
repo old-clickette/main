@@ -52,5 +52,6 @@ document.getElementById('searcharea').innerHTML = `<form action="/search" id="se
 <div class="input-group" style="padding-left: 30px; padding-right: 30px; width:100%;">
 <input type="search" class="form-control Post_Description_Text" name="q" id="searchbox" style="resize:none;" rows="1" placeholder="Search the web...">
 <div class="input-group-append"> <button class="btn btn-secondary" type="submit" style="height:38px;width:40.86px;"> <i class="fa fa-search"></i> </button> </div>
-</div></form>`
+</div></form>`;
+document.getElementById('searchbox').value = qfc;
     }
