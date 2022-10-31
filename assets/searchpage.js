@@ -50,4 +50,3 @@ function getUrlParameter(sParam) {
       console.log('Device: Mobile');
       document.location.replace('https://www.clickette.net/mobile.html');
     }
-document.getElementById('results').src = "https://search-proxy-test.claytontdm.repl.co/?q=" + q;
