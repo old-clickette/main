@@ -49,3 +49,4 @@ function getUrlParameter(sParam) {
       } else {
       console.log('Device: Mobile');
       document.location.replace('https://www.clickette.net/mobile.html');}
+      document.getElementById('results').src = q;
