@@ -48,5 +48,6 @@ function getUrlParameter(sParam) {
       console.log('Device: Desktop')
       } else {
       console.log('Device: Mobile');
-      document.location.replace('https://www.clickette.net/mobile.html');}
-      document.getElementById('results').src = q;
+      document.location.replace('https://www.clickette.net/mobile.html');
+    }
+document.getElementById('results').src = q;
