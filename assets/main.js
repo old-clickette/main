@@ -34,7 +34,7 @@ function enableMobileLayout() {
         
     var obj = JSON.parse(txt2);
     const fact = obj.fact;
-        console.log("Did you know? " + fact);
+        //console.log("Did you know? " + fact);
         addontext1 = document.getElementById('addonText');
         addontext1.innerHTML = '<h3>Did you know? ' + fact + '</h3>';
     }
