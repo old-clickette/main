@@ -4,13 +4,52 @@
   <script>
     var style = 'color: red; -webkit-text-stroke: 5px red; font-size:50px;';console.log('%cStop!', style );style = 'font-size:18px;';console.log("%cThis is a browser feature intended for developers. Do not enter or paste code which you don't understand. It may allow attackers to steal your information or impersonate you.\nSee https://en.wikipedia.org/wiki/Self-XSS for more details.", style);
   </script>
+  <style type="text/css">
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      background: #202124;
+      color: #eee;
+    }
+    h1{
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      padding-top: 20px;
+    }
+    p{
+      text-align: center;
+      font-family: 'Arial', sans-serif;
+      padding-top: 20px;
+    }
+    div{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 2%;
+    }
+    img{
+      max-width: 100%;
+      width: 40%;
+    }
+  </style>
 </head>
 <body>
-  <h1 style="text-align: center; font-family: 'Arial', sans-serif">Error 404 - Page Not Found</h1>
-  <p style="text-align: center; font-family: 'Arial', sans-serif">Redirecting to the homepage in 5 seconds</p>
+  <div>
+  <img src="./assets/img/logo.png" alt="Clickette Logo">
+  </div>
+  <h1>Error 404 - Page Not Found</h1>
+  <p>Redirecting to homepage in <span id="sec">5</span> seconds</p>
   <script>
-      setTimeout(function() {
-      window.location.href = '/';
-    }, 5000);
+    var timeleft = 5;
+    setInterval(function(){
+    timeleft--;
+    document.getElementById("sec").textContent = timeleft;
+      if(timeleft<=0) {
+        window.location.href = '/';
+      }
+    },1000);
   </script>
 </body>
