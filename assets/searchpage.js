@@ -10,7 +10,6 @@ function getUrlParameter(sParam) {
   }
 }
 var q = getUrlParameter('q');
-
 const qf = q.replaceAll('+', '%20');
 const qfc = decodeURIComponent(qf);
 checkForBangs(q);
