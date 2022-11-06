@@ -12,6 +12,9 @@
   src: local('Gotham'), url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
   font-display: swap;
 }
+* {
+  font-family: 'Gotham';
+}
 input[type=search] {-webkit-appearance: none !important;} input[type=search]::-webkit-search-cancel-button {-webkit-appearance:  none !important;}
 #container {
   top: 10%;
