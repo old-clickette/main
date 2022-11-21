@@ -88,4 +88,3 @@ function getCookie(cname) {
        setCookie("macWarningDismissed", 'true');
      }
   }
-}
