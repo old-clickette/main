@@ -16,7 +16,7 @@
   font-family: 'Gotham';
 }
 input {
-  font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif !important;
 }
 input[type=search] {-webkit-appearance: none !important;} input[type=search]::-webkit-search-cancel-button {-webkit-appearance:  none !important;}
 #container {
