@@ -61,7 +61,7 @@ function enableMobileLayout() {
       } 
     });
 var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
-if (isMac || isSafari) {
+if (isMac) {
 function setCookie(cname,cvalue) {
   document.cookie = cname + "=" + cvalue;
 }
