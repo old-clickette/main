@@ -60,3 +60,5 @@ function enableMobileLayout() {
         $el.css({'position': 'static', 'top': '0px'}); 
       } 
     });
+var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
+console.log(isMac);
