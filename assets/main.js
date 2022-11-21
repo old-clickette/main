@@ -61,7 +61,6 @@ function enableMobileLayout() {
       } 
     });
 var isMac = navigator.platform.toUpperCase().indexOf('MAC')>=0;
-var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
 if (isMac || isSafari) {
 function setCookie(cname,cvalue) {
   document.cookie = cname + "=" + cvalue;
