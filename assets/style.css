@@ -12,6 +12,27 @@
   src: local('Gotham'), url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
   font-display: swap;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #36383f #202124;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #202124;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #36383f;
+    border-radius: 10px;
+    border: 3px none #202124;
+  }
 * {
   font-family: 'Gotham';
 }
