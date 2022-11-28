@@ -42,6 +42,7 @@ $(window).scroll(function (e) {
 });
 if (window.matchMedia("(min-width: 937px)").matches) {
   console.log('Device: Desktop')
+  setTimeout(function(){$(".gs-snippet").wrap("<div style='width: 50%;'></div>")},1000);
 } else {
   console.log('Device: Mobile');
   document.getElementById('resultsbox').classList.remove("paddingbox");
