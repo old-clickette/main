@@ -13,9 +13,6 @@
     font-display: swap;
   }
   *:not(hr, .gsc-tabHeader) { border: 0px !important; }
-a {
-    color: hsl(228, 58%, 85%) !important;
-}
 .gsc-control-cse{
     font-family:Gotham, sans-serif !important;
 }
