@@ -6,4 +6,4 @@ Please email [contact@clickette.net](mailto:contact@clickette.net) immediately. 
 
 ## The data we collect
 
-We collect nothing. Yes, nothing. If you would like a representation of what is collected, stare at a blank wall.
+Check our [Privacy Policy](https://clickette.net/privacy).
