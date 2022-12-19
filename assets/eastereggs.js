@@ -201,7 +201,7 @@ function springyEmojiCursor(options) {
     }
     var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
     if(utc == "2023/04/01"){
-    document.getElementById("logo").src = "/assets/img/april_fools.png";
+    document.getElementById("logodiv").innerHTML = "<img src='/assets/img/april_fools.png' alt='Clickette Logo' style='max-width: 100%; width: 35%;' id='logo' class='unselectable'>";
     new springyEmojiCursor();
     }
     function forceSpecialDate() {
