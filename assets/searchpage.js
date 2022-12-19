@@ -82,3 +82,19 @@ function getCookie(cname) {
        setCookie("macWarningDismissed", 'true');
      }
   }
+
+function iOS() {
+  return [
+    'iPad Simulator',
+    'iPhone Simulator',
+    'iPod Simulator',
+    'iPad',
+    'iPhone',
+    'iPod'
+  ].includes(navigator.platform)
+  // iPad on iOS 13 detection
+  || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+}
+if (iOS) {
+  document.location.replace('/apple.html');
+}
