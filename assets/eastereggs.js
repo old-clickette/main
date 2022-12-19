@@ -206,6 +206,7 @@ function springyEmojiCursor(options) {
     }
     function forceSpecialDate() {
     new springyEmojiCursor();
+    document.getElementById("logodiv").innerHTML = "<img src='/assets/img/april_fools.png' alt='Clickette Logo' style='max-width: 100%; width: 35%;' id='logo' class='unselectable'>";
     }
     var pattern = ['c', 'l', 'i', 'c', 'k', 'e', 't', 't', 'e', 'a', 'i', 'r', 'l', 'i', 'n', 'e', 's'];
 var current = 0;
