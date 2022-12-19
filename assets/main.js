@@ -100,7 +100,7 @@ function getCookie(cname) {
     // iPad on iOS 13 detection
     || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
   }
-  if (iOS == true) {
+  if (iOS() == true) {
     document.location.replace('/apple.html');
   } else {
     console.log('Not on iOS');
