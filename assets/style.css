@@ -34,7 +34,7 @@
     border: 3px none #202124;
   }
 * {
-  font-family: 'Gotham';
+  font-family: 'Gotham', sans-serif;
 }
 input {
   font-family: Arial, sans-serif !important;
