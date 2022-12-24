@@ -75,11 +75,8 @@ function getCookie(cname) {
   }
   return "";
 }
-
-  let macWarningDismissed = getCookie("macWarningDismissed");
-  if (macWarningDismissed == "") {
-      alert('Warning: Some features on this website do not work as intended on macOS.');
-       setCookie("macWarningDismissed", 'true');
+  if (isMac) {
+document.location.replace('https://a.clickette.ner/');
      }
   }
 
@@ -96,7 +93,7 @@ function iOS() {
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 if (iOS() == true) {
-  document.location.replace('/apple.html');
+  document.location.replace('https://a.clickette.ner/');
 } else {
   console.log('Not on iOS');
 }
