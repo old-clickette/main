@@ -10,7 +10,6 @@
   font-style: bold;
   font-weight: 500;
   src: local('Gotham'), url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
-  src: url('/assets/GothamBold.svg') format('svg');
   font-display: swap;
 }
 /* ===== Scrollbar CSS ===== */
