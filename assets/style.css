@@ -9,7 +9,7 @@
   font-family: 'Gotham';
   font-style: bold;
   font-weight: 500;
-  src: local('Gotham'), url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
+  src: url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
   font-display: swap;
 }
 /* ===== Scrollbar CSS ===== */
