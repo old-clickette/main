@@ -93,7 +93,7 @@ function iOS() {
   || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
 }
 if (iOS() == true) {
-  document.location.replace('https://a.clickette.ner/');
+  document.location.replace('https://a.clickette.net/');
 } else {
   console.log('Not on iOS');
 }
