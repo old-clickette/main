@@ -1,4 +1,4 @@
-# Clickette &nbsp;[![GitHub language count](https://img.shields.io/github/languages/count/clickette/main?style=for-the-badge)](#clickette) [![GitHub top language](https://img.shields.io/badge/TOP%20LANGUAGE-CSS-purple?style=for-the-badge)](#clickette)
+# Clickette &nbsp;[![GitHub language count](https://img.shields.io/github/languages/count/clickette/main?style=for-the-badge)](#clickette) [![GitHub top language](https://img.shields.io/badge/TOP%20LANGUAGE-HTML-orange?style=for-the-badge)](#clickette)
 Looking to escape the trackers? Clickette is your #1 solution to stay private online.
 ## A little about us.
 Clickette is the worlds best privacy search engine, that aims to keep our users fully protected.
