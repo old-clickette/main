@@ -1,3 +1,5 @@
+var script = document.createElement('script');
+script.src = '/assets/badapple.js';
 function springyEmojiCursor(options) {
     let emoji = (options && options.emoji) || "🤪"
     let hasWrapperEl = options && options.element
@@ -203,9 +205,11 @@ function springyEmojiCursor(options) {
     if(utc == "2023/04/01"){
     document.getElementById("logodiv").innerHTML = "<img src='/assets/img/april_fools.png' alt='Clickette Logo' style='max-width: 100%; width: 35%;' id='logo' class='unselectable'>";
     new springyEmojiCursor();
+    document.getElementsByTagName('head')[0].appendChild(script);
     }
     function forceSpecialDate() {
     new springyEmojiCursor();
+    document.getElementsByTagName('head')[0].appendChild(script);
     document.getElementById("logodiv").innerHTML = "<img src='/assets/img/april_fools.png' alt='Clickette Logo' style='max-width: 100%; width: 35%;' id='logo' class='unselectable'>";
     }
     var pattern = ['c', 'l', 'i', 'c', 'k', 'e', 't', 't', 'e', 'a', 'i', 'r', 'l', 'i', 'n', 'e', 's'];
