@@ -76,7 +76,7 @@ function getCookie(cname) {
   return "";
 }
   if (isMac) {
-document.location.replace('https://a.clickette.ner/');
+document.location.replace('https://a.clickette.net/');
      }
   }
 
