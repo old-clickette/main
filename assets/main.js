@@ -66,7 +66,7 @@ function setCookie(cname,cvalue) {
   document.cookie = cname + "=" + cvalue;
 }
   if (isMac) {
-document.location.replace('https://a.clickette.ner/');
+document.location.replace('https://a.clickette.net/');
      }
   }
   function iOS() {
