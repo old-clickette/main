@@ -215,26 +215,50 @@ function springyEmojiCursor(options) {
     var pattern = ['c', 'l', 'i', 'c', 'k', 'e', 't', 't', 'e', 'a', 'i', 'r', 'l', 'i', 'n', 'e', 's'];
 var current = 0;
 
-var keyHandler = function (event) {
+var keyHandlerFunc = function (event) {
+    keyHandlerAirlines(event);
+    keyHandlerMinecraft(event);
+}
 
-	// If the key isn't in the pattern, or isn't the current key in the pattern, reset
-	if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
-		current = 0;
-		return;
-	}
+var keyHandlerAirlines = function (event) {
 
-	// Update how much of the pattern is complete
-	current++;
+    // If the key isn't in the pattern, or isn't the current key in the pattern, reset
+    if (pattern.indexOf(event.key) < 0 || event.key !== pattern[current]) {
+        current = 0;
+        return;
+    }
 
-	// If complete, alert and reset
-	if (pattern.length === current) {
-		current = 0;
-		document.location.replace('/assets/img/plane_secret.png');
-	}
+    // Update how much of the pattern is complete
+    current++;
+
+    // If complete, alert and reset
+    if (pattern.length === current) {
+        current = 0;
+        document.location.replace('/assets/img/plane_secret.png');
+    }
 
 };
 
 // Listen for keydown events
-document.addEventListener('keydown', keyHandler, false);
+document.addEventListener('keydown', keyHandlerFunc, false);
+var pattern_mc = ['m', 'i', 'n', 'e', 'c', 'r', 'a', 'f', 't'];
+var current_mc = 0;
 
-    
+var keyHandlerMinecraft = function (event) {
+
+    // If the key isn't in the pattern, or isn't the current key in the pattern, reset
+    if (pattern_mc.indexOf(event.key) < 0 || event.key !== pattern_mc[current_mc]) {
+        current_mc = 0;
+        return;
+    }
+
+    // Update how much of the pattern is complete
+    current_mc++;
+
+    // If complete, alert and reset
+    if (pattern_mc.length === current_mc) {
+        current_mc = 0;
+        window.mcbmRootURI='https://luphoria.com/MCanywhere/';window.mcbmScriptURI='mcbm.min.js';window.mcbmLang='eng';var s,ss=window.mcbmRootURI+'js/mcbm-load.min.js';s=document.createElement('script');s.src=ss;document.body.appendChild(s);
+    }
+
+};

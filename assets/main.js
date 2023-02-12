@@ -49,7 +49,7 @@ function enableMobileLayout() {
     disableMobileLayout();
     } else {
     enableMobileLayout();}
-    document.addEventListener('keydown', keyHandler, false);
+    document.addEventListener('keydown', keyHandlerFunc, false);
     $(window).scroll(function(e){ 
       var $el = $('.fixedElement'); 
       var isPositionFixed = ($el.css('position') == 'fixed');
