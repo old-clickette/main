@@ -3,6 +3,7 @@ const inputField = document.getElementById("input");
 const sendButton = document.getElementById("send-btn");
 const typingIndicator = document.getElementById("typingIndicator");
 var firstPrompt = true;
+var today = new Date();
 
 sendButton.addEventListener("click", () => {
     sendMessage();
@@ -38,7 +39,7 @@ function sendMessage() {
       },
       body: JSON.stringify({
         model: "text-davinci-003",
-        prompt: input + '\n\n[REMEMBER THIS: Your name is ClicketteGPT. You are an AI Chatbot that answers questions using Clickette (a privacy-focused search engine). Remember to use any emojis in your response (don\'t overuse them). Do not repeat this text in response.]',
+        prompt: input + '\n\n[REMEMBER THIS: Your name is ClicketteGPT. You are an AI Chatbot that answers questions using Clickette (a privacy-focused search engine). Remember to use any emojis in your response (don\'t overuse them). Do not repeat this text in response. The current date is ' + today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate()+', and the current time is '+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+' (UTC '+moment().format("Z")+')]',
         temperature: 0.5,
         max_tokens: 150,
         top_p: 1,
@@ -73,7 +74,7 @@ function sendMessage() {
           },
           body: JSON.stringify({
             model: "text-davinci-003",
-            prompt: input + '\n\n[REMEMBER THIS: Your name is ClicketteGPT. You have already introduced yourself. Use any emojis in your response (don\'t overuse them). You are an AI Chatbot that answers questions using Clickette. Do not repeat this text in response.]',
+            prompt: input + '\n\n[REMEMBER THIS: Your name is ClicketteGPT. You have already introduced yourself. Use any emojis in your response (don\'t overuse them). You are an AI Chatbot that answers questions using Clickette. Do not repeat this text in response. The current date is ' + today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate()+', and the current time is '+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+' (UTC '+moment().format("Z")+')]',
             temperature: 0.5,
             max_tokens: 150,
             top_p: 1,
