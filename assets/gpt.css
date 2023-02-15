@@ -1,0 +1,121 @@
+  @font-face {
+    font-family: gotham;
+    font-style: bold;
+    font-weight: 500;
+    src: url(https://fonts.cdnfonts.com/s/14898/GothamMedium.woff) format('woff');
+    font-display: swap;
+  }
+  
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #36383f #202124;
+    font-family: gotham, sans-serif;
+  }
+  
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #202124;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #36383f;
+    border-radius: 10px;
+    border: 3px #202124;
+  }
+  
+  body {
+    background-color: #202124;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  #chat-window {
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid #36383f;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #202124;
+    color: #eee;
+  }
+  
+  #output {
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  
+  .user-message {
+    background-color: #36383f;
+    color: #eee;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 50%;
+    float: left;
+  }
+  
+  .bot-message {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 50%;
+    float: right;
+    text-align: left;
+  }
+  
+  #input-container {
+    margin-top: 10px;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    outline: #000;
+  }
+  
+  #input {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    border: 1px solid #222427;
+    background-color: #26272b;
+    color: #eee;
+    font-weight: 500;
+  }
+  
+  #input:hover {
+    background-color: #2b2c30;
+  }
+  
+  #send-btn {
+    width: 10%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #fd7014;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  #typingIndicator {
+    animation: typing 2.5s ease-in-out infinite;
+  }
+  
+  @keyframes typing {
+    0% {opacity: 0.5;}
+    50% {opacity: 1;}
+    100% {opacity: 0.5;}
+  }
+  .hidden {
+    user-select: none;
+    color: #202124;
+  }
