@@ -75,17 +75,21 @@
   #input-container {
     margin-top: 10px;
     position: relative;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-left: auto;
     padding-right: auto;
     outline: #000;
   }
   
   #input {
-    width: 81%;
+    width: 67%;
     padding: 10px;
     border-radius: 5px;
     font-size: 16px;
+    flex: 1;
+    margin-right: 10px;
     border: 1px solid #222427;
     background-color: #26272b;
     color: #eee;
@@ -97,12 +101,13 @@
   }
   
   #send-btn {
-    width: 10%;
+    width: 47px;
     padding: 10px;
     border-radius: 5px;
     border: none;
     background-color: #fd7014;
     color: #fff;
+    margin-left: 10px;
     font-size: 16px;
     cursor: pointer;
     margin-left: auto;
@@ -120,4 +125,11 @@
   .hidden {
     user-select: none;
     color: #202124;
+  }
+  #title {
+    font-size: 2vw;
+  }
+  hr {
+    border-color: #404040 !important;
+    border-style: solid;
   }

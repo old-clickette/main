@@ -18,6 +18,8 @@ inputField.addEventListener("keydown", event => {
 function sendMessage() {
     const input = inputField.value;
     inputField.value = "";
+    inputField.disabled = true;
+    sendButton.disabled = true;
   
     chatWindow.innerHTML += `
       <div class="user-message">
@@ -25,7 +27,7 @@ function sendMessage() {
       </div>
     `;
     document.getElementById('output').scrollTo(0, document.getElementById("output").scrollHeight); 
-    typingIndicator.classList.remove('hidden');
+    setTimeout(function(){typingIndicator.classList.remove('hidden')},Math.floor(Math.random() * (650 - 100 + 1)) + 100);
   
     if (firstPrompt == true) {
     fetch("https://api.openai.com/v1/completions", {
@@ -56,9 +58,11 @@ function sendMessage() {
         `;
         document.getElementById('output').scrollTo(0, document.getElementById("output").scrollHeight);
         typingIndicator.classList.add('hidden'); 
+        inputField.disabled = false;
+        sendButton.disabled = false;
       }, 100);
     })
-    .catch(error => console.log(error));
+    .catch(error => typingIndicator.innerHTML = '&nbsp;<code>' + error + '</code> - Check the console for more details');
     firstPrompt = false;
   } else {
       fetch("https://api.openai.com/v1/completions", {
@@ -89,6 +93,8 @@ function sendMessage() {
             `;
             document.getElementById('output').scrollTo(0, document.getElementById("output").scrollHeight); 
             typingIndicator.classList.add('hidden');
+            inputField.disabled = false;
+            sendButton.disabled = false;
           }, 100);
         })
         .catch(error => console.log(error));
