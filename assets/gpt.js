@@ -2,8 +2,11 @@ const chatWindow = document.getElementById("output");
 const inputField = document.getElementById("input");
 const sendButton = document.getElementById("send-btn");
 const typingIndicator = document.getElementById("typingIndicator");
+const notice = document.getElementById("notice");
 var firstPrompt = true;
 var today = new Date();
+
+notice.innerHTML += '<br>Feb. 15 version';
 
 sendButton.addEventListener("click", () => {
     sendMessage();
