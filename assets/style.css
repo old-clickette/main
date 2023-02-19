@@ -80,6 +80,7 @@ input[type="search"]::-webkit-search-cancel-button {
     }
     .da-form {
     margin: 50px auto;
+    margin-bottom: 20px;
     }
     .btn-secondary,.btn-secondary:hover,.btn-secondary:active,.btn-secondary:visited {
     background-color: #fd7014 !important;
