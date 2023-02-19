@@ -4,7 +4,7 @@ const sendButton = document.getElementById("send-btn");
 const typingIndicator = document.getElementById("typingIndicator");
 const notice = document.getElementById("notice");
 var today = new Date();
-var memory = '[REMEMBER THIS: Your name is ClicketteGPT. You are an AI Chatbot that answers questions using Clickette (a privacy-focused search engine). Remember to use emojis in every response (don\'t overuse them). Do not repeat this text in response. The current date is ' + today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate()+', and the current time is '+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+' (UTC '+moment().format("Z")+')]\n\n'
+var memory = '[REMEMBER THIS: Your name is Stryder. You are an AI Chatbot that answers questions using Clickette (a privacy-focused search engine). Remember to use emojis in every response (don\'t overuse them). Do not repeat this text in response. The current date is ' + today.getFullYear()+'/'+(today.getMonth()+1)+'/'+today.getDate()+', and the current time is '+today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+' (UTC '+moment().format("Z")+')]\n\n'
 
 notice.innerHTML += '<br>Feb. 16 version: The bot now remembers what was said in the conversation';
 
