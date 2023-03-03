@@ -1,0 +1,689 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>MainMenu</name>
+    <events>
+        <include>InputManagement</include>
+        <include>Fonts</include>
+        <include>RPGText</include>
+        <include>AttackLoader</include>
+        <include>Menus</include>
+        <event-block sid="194677073697328">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="301026708660067" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Create object" sid="493187173332363" type="System">
+                    <param id="0" name="Object to create">BattleFont</param>
+                    <param id="1" name="Layer">0</param>
+                    <param id="2" name="X">8</param>
+                    <param id="3" name="Y">416</param>
+                </action>
+                <action id="-10" name="Set value" sid="605342153352148" type="BattleFont">
+                    <param id="0" name="Instance variable">Name</param>
+                    <param id="1" name="Value">&quot;Update&quot;</param>
+                </action>
+                <action id="-5" name="Set width" sid="511018501210371" type="BattleFont">
+                    <param id="0" name="Width">640</param>
+                </action>
+                <action id="-6" name="Set height" sid="834519197109982" type="BattleFont">
+                    <param id="0" name="Height">64</param>
+                </action>
+                <action id="0" name="Set text" sid="997228410907339" type="BattleFont">
+                    <param id="0" name="Text">&quot;UPDATE TEXT&quot;</param>
+                </action>
+                <action id="-15" name="Set visible" sid="633456208298692" type="BattleFont">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="566182451496929">
+            <conditions>
+                <condition id="19" name="On update found" sid="271470835549957" type="Browser" />
+            </conditions>
+            <actions>
+                <action id="14" name="Log" sid="186182218521078" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">&quot;[DEBUG] Update found&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="871492164898327" type="System">
+                    <param id="0" name="Seconds">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="735021892660141">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="408005518521694" type="RPGText">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Update&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="234881402244069" type="BattleFont">
+                            <param id="0" name="Text">&quot;UPDATE AVAILABLE.&quot; &amp; newline &amp; &quot;DOWNLOADING...&quot;</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="642147750921346" type="RPGText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="368479293880174">
+            <conditions>
+                <condition id="20" name="On update ready" sid="903434434188712" type="Browser" />
+            </conditions>
+            <actions>
+                <action id="14" name="Log" sid="591757470747617" type="Browser">
+                    <param id="0" name="Type">0</param>
+                    <param id="1" name="Message">&quot;[DEBUG] Update ready&quot;</param>
+                </action>
+                <action id="-16" name="Wait" sid="791675166837046" type="System">
+                    <param id="0" name="Seconds">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="590699814747872">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="890284827607274" type="RPGText">
+                            <param id="0" name="Instance variable">Name</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">&quot;Update&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-15" name="Set visible" sid="989726922429813" type="RPGText">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                        <action id="0" name="Set text" sid="773819482594290" type="RPGText">
+                            <param id="0" name="Text">&quot;UPDATE AVAILABLE.&quot; &amp; newline &amp; &quot;PLEASE REFRESH THE PAGE.&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-group description="" sid="7618724697415427" title="MainMenu">
+            <sub-events>
+                <event-block sid="485041284869353">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6312807226621018" type="Function">
+                            <param id="0" name="Name">&quot;MenuMain&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8029955601129796" type="MenuItem" />
+                        <action id="-9" name="Destroy" sid="2667792126594554" type="DefaultFont" />
+                        <action id="0" name="Call function" sid="7882418674263834" type="Function">
+                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;&quot;</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="5097830643532841" type="System">
+                            <param id="0" name="Object to create">DefaultFont</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">32</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="9572232690273981" type="DefaultFont">
+                            <param id="0" name="Width">640</param>
+                            <param id="1" name="Height">32</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="2377617122476924" type="DefaultFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="6017732506802038" type="DefaultFont">
+                            <param id="0" name="Text">&quot;Select your bad time&quot;</param>
+                        </action>
+                        <action id="7" name="Set horizontal alignment" sid="6681899051898119" type="DefaultFont">
+                            <param id="0" name="Horizontal alignment">1</param>
+                        </action>
+                        <action id="0" name="Call function" sid="121948490218354" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;Normal&quot;{###}&quot;MenuModeNormal&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="574106720171711" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}128{###}1{###}&quot;Practice&quot;{###}&quot;MenuModePractice&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="304790185942551" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}160{###}2{###}&quot;Endless&quot;{###}&quot;MenuModeEndless&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="326311762535984" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}192{###}3{###}&quot;Single attack&quot;{###}&quot;MenuModeSingle&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="516406951993025" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}224{###}4{###}&quot;Custom attack&quot;{###}&quot;MenuModeCustom&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1934787540782705">
+                    <conditions>
+                        <condition id="0" name="On function" sid="5152785738951064" type="Function">
+                            <param id="0" name="Name">&quot;MenuModeNormal&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="8492232441859258" type="System">
+                            <param id="0" name="Variable">SimulatorMode</param>
+                            <param id="1" name="Value">MODE_NORMAL</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="6921132940594369" type="System">
+                            <param id="0" name="Layout">BattleScreen</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="732992713640422">
+                    <conditions>
+                        <condition id="0" name="On function" sid="630588370956338" type="Function">
+                            <param id="0" name="Name">&quot;MenuModePractice&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="430576558749824" type="System">
+                            <param id="0" name="Variable">SimulatorMode</param>
+                            <param id="1" name="Value">MODE_PRACTICE</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="198624542462292" type="System">
+                            <param id="0" name="Layout">BattleScreen</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8566872012264114">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6357036453760765" type="Function">
+                            <param id="0" name="Name">&quot;MenuModeEndless&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="4876547611972064" type="MenuItem" />
+                        <action id="-9" name="Destroy" sid="9716864372445079" type="DefaultFont" />
+                        <action id="0" name="Call function" sid="3898774398935571" type="Function">
+                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;MenuMain&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="652672334406652" type="System">
+                            <param id="0" name="Variable">SimulatorMode</param>
+                            <param id="1" name="Value">MODE_ENDLESS</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="1993663655527849">
+                            <conditions>
+                                <condition id="-10" name="For" sid="7340921845684781" type="System">
+                                    <param id="0" name="Name">&quot;&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="158277619791938" type="Function">
+                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}96 + loopindex*32{###}loopindex{###}&quot;Phase &quot; &amp; (loopindex + 1){###}&quot;MenuEndless&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="3480766274282799">
+                    <conditions>
+                        <condition id="0" name="On function" sid="891253885861754" type="Function">
+                            <param id="0" name="Name">&quot;MenuEndless&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="958333354220335" type="System">
+                            <param id="0" name="Variable">EndlessStage</param>
+                            <param id="1" name="Value">MenuStack.At(MenuStack.Width-2)</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="5426232936612767" type="System">
+                            <param id="0" name="Layout">BattleScreen</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="8440787368101829">
+                    <conditions>
+                        <condition id="0" name="On function" sid="3488534236377242" type="Function">
+                            <param id="0" name="Name">&quot;MenuModeSingle&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="2007414306464213" type="MenuItem" />
+                        <action id="-9" name="Destroy" sid="8210127351655443" type="DefaultFont" />
+                        <action id="0" name="Call function" sid="4849523377919098" type="Function">
+                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;MenuMain&quot;</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="1371758894200221" type="System">
+                            <param id="0" name="Variable">SimulatorMode</param>
+                            <param id="1" name="Value">MODE_SINGLE</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="4719384433315021" type="System">
+                            <param id="0" name="Object to create">DefaultFont</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">32</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="9218861551471155" type="DefaultFont">
+                            <param id="0" name="Width">640</param>
+                            <param id="1" name="Height">32</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="9096353482776745" type="DefaultFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="4129082167688271" type="DefaultFont">
+                            <param id="0" name="Text">&quot;Choose an attack&quot;</param>
+                        </action>
+                        <action id="7" name="Set horizontal alignment" sid="812164509132716" type="DefaultFont">
+                            <param id="0" name="Horizontal alignment">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="2551204829762468">
+                            <conditions>
+                                <condition id="-10" name="For" sid="4888335628692321" type="System">
+                                    <param id="0" name="Name">&quot;&quot;</param>
+                                    <param id="1" name="Start index">0</param>
+                                    <param id="2" name="End index">AttackLoader.Width-1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="307989349234234" type="Function">
+                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}96 + loopindex*32{###}loopindex{###}AttackLoader.At(loopindex){###}&quot;MenuSingleAttack&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="2192146727750086">
+                    <conditions>
+                        <condition id="0" name="On function" sid="4024702740002228" type="Function">
+                            <param id="0" name="Name">&quot;MenuSingleAttack&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="418412347711597" type="System">
+                            <param id="0" name="Variable">SingleAttack</param>
+                            <param id="1" name="Value">AttackLoader.At(MenuStack.At(MenuStack.Width-2))</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="9595352188215692" type="System">
+                            <param id="0" name="Layout">BattleScreen</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="963583744925542">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6849994863830874" type="Function">
+                            <param id="0" name="Name">&quot;MenuModeCustom&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="5653190402635955" type="MenuItem" />
+                        <action id="-9" name="Destroy" sid="9147357918666116" type="DefaultFont" />
+                        <action id="-9" name="Destroy" sid="7873626107978393" type="FileChooser" />
+                        <action id="0" name="Call function" sid="1302946453882055" type="Function">
+                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;MenuMain&quot;</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="8289907011469804" type="System">
+                            <param id="0" name="Object to create">DefaultFont</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">0</param>
+                            <param id="3" name="Y">32</param>
+                        </action>
+                        <action id="-7" name="Set size" sid="6270522023803733" type="DefaultFont">
+                            <param id="0" name="Width">640</param>
+                            <param id="1" name="Height">32</param>
+                        </action>
+                        <action id="2" name="Set scale" sid="9060833632224235" type="DefaultFont">
+                            <param id="0" name="Scale">2</param>
+                        </action>
+                        <action id="0" name="Set text" sid="63601467630781" type="DefaultFont">
+                            <param id="0" name="Text">&quot;Custom attack&quot;</param>
+                        </action>
+                        <action id="7" name="Set horizontal alignment" sid="641170030262494" type="DefaultFont">
+                            <param id="0" name="Horizontal alignment">1</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="9409175181526048" type="System">
+                            <param id="0" name="Variable">SimulatorMode</param>
+                            <param id="1" name="Value">MODE_SINGLE</param>
+                        </action>
+                        <action id="0" name="Call function" sid="131065348070977" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}96{###}0{###}&quot;Documentation&quot;{###}&quot;&quot;</param>
+                        </action>
+                        <action id="0" name="Call function" sid="363254892081796" type="Function">
+                            <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                            <param id="1" name="Parameter {n}">0{###}192{###}128{###}1{###}&quot;Load file&quot;{###}&quot;MenuCustomSelect&quot;</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <variable constant="0" name="Action" sid="750606889767726" static="0" type="text"></variable>
+                        <event-block sid="5556763763617329">
+                            <conditions>
+                                <condition id="3" name="Has key" sid="3443274778672137" type="AttackList">
+                                    <param id="0" name="Key">&quot;custom&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="679614942751458" type="System">
+                                    <param id="0" name="Variable">Action</param>
+                                    <param id="1" name="Value">&quot;MenuCustomRun&quot;</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="933808084676421">
+                            <conditions>
+                                <condition id="-1" name="Every tick" sid="678880668806750" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="0" name="Call function" sid="133977934621254" type="Function">
+                                    <param id="0" name="Name">&quot;CreateMenuItem&quot;</param>
+                                    <param id="1" name="Parameter {n}">0{###}192{###}160{###}2{###}&quot;Run attack&quot;{###}Action</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="9054944955083307">
+                    <conditions>
+                        <condition id="0" name="On function" sid="1137774981259011" type="Function">
+                            <param id="0" name="Name">&quot;MenuCustomSelect&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Destroy" sid="8400962482911318" type="MenuItem" />
+                        <action id="-9" name="Destroy" sid="4432629290632502" type="DefaultFont" />
+                        <action id="0" name="Call function" sid="3348489213393067" type="Function">
+                            <param id="0" name="Name">&quot;MenuBackAction&quot;</param>
+                            <param id="1" name="Parameter {n}">&quot;MenuModeCustom&quot;</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="7277637630369302" type="System">
+                            <param id="0" name="Object to create">MenuItem</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">192</param>
+                            <param id="3" name="Y">96</param>
+                        </action>
+                        <action id="-13" name="Set boolean" sid="2159555875386753" type="MenuItem">
+                            <param id="0" name="Instance variable">Created</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="1755543219714336" type="System">
+                            <param id="0" name="Object to create">FileChooser</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">224</param>
+                            <param id="3" name="Y">96</param>
+                        </action>
+                        <action id="17" name="Execute Javascript" sid="633282825002353" type="Browser">
+                            <param id="0" name="Javascript">&quot;document.getElementById(&apos;filechooser&apos;).focus();&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="7985503632529348">
+                    <conditions>
+                        <condition id="0" name="On function" sid="6709395051738056" type="Function">
+                            <param id="0" name="Name">&quot;MenuCustomRun&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="5872857608887822" type="System">
+                            <param id="0" name="Variable">SingleAttack</param>
+                            <param id="1" name="Value">&quot;custom&quot;</param>
+                        </action>
+                        <action id="-2" name="Go to layout" sid="3586928206039241" type="System">
+                            <param id="0" name="Layout">BattleScreen</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="4647217044743368">
+                    <conditions>
+                        <condition id="0" name="On changed" sid="9102398507502319" type="FileChooser" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Request URL" sid="2309179160700937" type="AJAX">
+                            <param id="0" name="Tag">&quot;custom&quot;</param>
+                            <param id="1" name="URL">FileChooser.FileURLAt(0)</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="3298027994454229">
+                    <conditions>
+                        <condition id="0" name="On completed" sid="8558685013424337" type="AJAX">
+                            <param id="0" name="Tag">&quot;custom&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Add key" sid="3047116548548368" type="AttackList">
+                            <param id="0" name="Key">&quot;custom&quot;</param>
+                            <param id="1" name="Value">AJAX.LastData</param>
+                        </action>
+                        <action id="-3" name="Create object" sid="9490153154596489" type="System">
+                            <param id="0" name="Object to create">BattleFont</param>
+                            <param id="1" name="Layer">0</param>
+                            <param id="2" name="X">8</param>
+                            <param id="3" name="Y">8</param>
+                        </action>
+                        <action id="0" name="Set text" sid="1740537707642743" type="BattleFont">
+                            <param id="0" name="Text">&quot;CUSTOM ATTACK LOADED&quot;</param>
+                        </action>
+                        <action id="-5" name="Set width" sid="5325527041498359" type="BattleFont">
+                            <param id="0" name="Width">640</param>
+                        </action>
+                        <action id="-6" name="Set height" sid="5211929348730813" type="BattleFont">
+                            <param id="0" name="Height">32</param>
+                        </action>
+                        <action id="-10" name="Set value" sid="9241165621789806" type="BattleFont">
+                            <param id="0" name="Instance variable">Timeout</param>
+                            <param id="1" name="Value">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="2930222903867678">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="8676844751034461" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="7389657786042543" type="System">
+                            <param id="0" name="Variable">HP</param>
+                            <param id="1" name="Value">MaxHP</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block any="1" sid="3934138391911">
+                    <conditions>
+                        <condition id="-2" name="On start of layout" sid="1041146530268575" type="System" />
+                        <condition id="0" name="On function" sid="7258591913794977" type="Function">
+                            <param id="0" name="Name">&quot;AttackLoadFinished&quot;</param>
+                        </condition>
+                    </conditions>
+                    <actions />
+                    <sub-events>
+                        <event-block sid="9761831204163876">
+                            <conditions>
+                                <condition id="-8" name="Compare two values" sid="5831726787230615" type="System">
+                                    <param id="0" name="First value">AttackList.KeyCount</param>
+                                    <param id="1" name="Comparison">5</param>
+                                    <param id="2" name="Second value">AttackLoader.Width</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-3" name="Create object" sid="1543908224383827" type="System">
+                                    <param id="0" name="Object to create">PlayerHeart</param>
+                                    <param id="1" name="Layer">0</param>
+                                    <param id="2" name="X">0</param>
+                                    <param id="3" name="Y">0</param>
+                                </action>
+                                <action id="-8" name="Set angle" sid="2501214630109601" type="PlayerHeart">
+                                    <param id="0" name="Angle">90</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="5348712262903138" type="PlayerHeart">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">0</param>
+                                    <param id="2" name="Value">100</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="3100769631086494" type="PlayerHeart">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">1</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-28" name="Set effect parameter" sid="1761116705025522" type="PlayerHeart">
+                                    <param id="0" name="Effect">&quot;Tint&quot;</param>
+                                    <param id="1" name="Parameter index">2</param>
+                                    <param id="2" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="7722436274433268" type="PlayerHeart">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Call function" sid="9637040683959957" type="Function">
+                                    <param id="0" name="Name">&quot;MenuMain&quot;</param>
+                                    <param id="1" name="Parameter {n}"></param>
+                                </action>
+                            </actions>
+                            <sub-events>
+                                <variable constant="0" name="FirstStart" sid="9570519099240379" static="1" type="number">1</variable>
+                                <event-block sid="6664513252215855">
+                                    <conditions>
+                                        <condition id="-14" name="Compare variable" sid="4646122072848713" type="System">
+                                            <param id="0" name="Variable">FirstStart</param>
+                                            <param id="1" name="Comparison">0</param>
+                                            <param id="2" name="Value">1</param>
+                                        </condition>
+                                    </conditions>
+                                    <actions>
+                                        <action id="-9" name="Set value" sid="2686144668273752" type="System">
+                                            <param id="0" name="Variable">FirstStart</param>
+                                            <param id="1" name="Value">0</param>
+                                        </action>
+                                    </actions>
+                                    <sub-events>
+                                        <event-block sid="1419878553554108">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="9775557357179387" type="System">
+                                                    <param id="0" name="First value">Browser.QueryParam(&quot;mode&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;normal&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="7856715718170849" type="System">
+                                                    <param id="0" name="Variable">SimulatorMode</param>
+                                                    <param id="1" name="Value">MODE_NORMAL</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="2250937489427595" type="System">
+                                                    <param id="0" name="Layout">BattleScreen</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="4698512175436133">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="7503384418264523" type="System">
+                                                    <param id="0" name="First value">Browser.QueryParam(&quot;mode&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;endless1&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="2615427988409121" type="System">
+                                                    <param id="0" name="Variable">SimulatorMode</param>
+                                                    <param id="1" name="Value">MODE_ENDLESS</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="3348766332315247" type="System">
+                                                    <param id="0" name="Variable">EndlessStage</param>
+                                                    <param id="1" name="Value">0</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="7000769931317483" type="System">
+                                                    <param id="0" name="Layout">BattleScreen</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="9073934813284889">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="484871644179359" type="System">
+                                                    <param id="0" name="First value">Browser.QueryParam(&quot;mode&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;endless2&quot;</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="6999416949166913" type="System">
+                                                    <param id="0" name="Variable">SimulatorMode</param>
+                                                    <param id="1" name="Value">MODE_ENDLESS</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="474366002640576" type="System">
+                                                    <param id="0" name="Variable">EndlessStage</param>
+                                                    <param id="1" name="Value">1</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="8062297581304893" type="System">
+                                                    <param id="0" name="Layout">BattleScreen</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                        <event-block sid="2476943766740757">
+                                            <conditions>
+                                                <condition id="-8" name="Compare two values" sid="8615747155016074" type="System">
+                                                    <param id="0" name="First value">Browser.QueryParam(&quot;mode&quot;)</param>
+                                                    <param id="1" name="Comparison">0</param>
+                                                    <param id="2" name="Second value">&quot;single&quot;</param>
+                                                </condition>
+                                                <condition id="3" name="Has key" sid="3953270010473576" type="AttackList">
+                                                    <param id="0" name="Key">Browser.QueryParam(&quot;attack&quot;)</param>
+                                                </condition>
+                                            </conditions>
+                                            <actions>
+                                                <action id="-9" name="Set value" sid="2855488460274073" type="System">
+                                                    <param id="0" name="Variable">SimulatorMode</param>
+                                                    <param id="1" name="Value">MODE_SINGLE</param>
+                                                </action>
+                                                <action id="-9" name="Set value" sid="5672583306802497" type="System">
+                                                    <param id="0" name="Variable">SingleAttack</param>
+                                                    <param id="1" name="Value">Browser.QueryParam(&quot;attack&quot;)</param>
+                                                </action>
+                                                <action id="-2" name="Go to layout" sid="9484533986639156" type="System">
+                                                    <param id="0" name="Layout">BattleScreen</param>
+                                                </action>
+                                            </actions>
+                                        </event-block>
+                                    </sub-events>
+                                </event-block>
+                            </sub-events>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="8117646656898948">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="8804230401905531" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Call function" sid="4814368117172139" type="Function">
+                            <param id="0" name="Name">&quot;RunMenu&quot;</param>
+                            <param id="1" name="Parameter {n}"></param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="1750963108900187">
+                    <conditions>
+                        <condition id="-7" name="Compare instance variable" sid="9954261844587415" type="MenuItem">
+                            <param id="0" name="Instance variable">ID</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Value">MenuStack.Back</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-1" name="Set X" sid="5597482814778178" type="PlayerHeart">
+                            <param id="0" name="X">MenuItem.X + 8</param>
+                        </action>
+                        <action id="-2" name="Set Y" sid="5742475648674647" type="PlayerHeart">
+                            <param id="0" name="Y">MenuItem.Y + 12</param>
+                        </action>
+                        <action id="-6" name="Scroll to Y" sid="8533637664891725" type="System">
+                            <param id="0" name="Y">MenuItem.Y - 16</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+    </events>
+</c2eventsheet>
