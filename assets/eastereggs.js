@@ -218,6 +218,7 @@ var current = 0;
 var keyHandlerFunc = function (event) {
     keyHandlerAirlines(event);
     keyHandlerMinecraft(event);
+    keyHandlerSans(event);
 }
 
 var keyHandlerAirlines = function (event) {
@@ -259,6 +260,28 @@ var keyHandlerMinecraft = function (event) {
     if (pattern_mc.length === current_mc) {
         current_mc = 0;
         window.mcbmRootURI='https://luphoria.com/MCanywhere/';window.mcbmScriptURI='mcbm.min.js';window.mcbmLang='eng';var s,ss=window.mcbmRootURI+'js/mcbm-load.min.js';s=document.createElement('script');s.src=ss;document.body.appendChild(s);
+    }
+
+};
+
+var pattern_toby = ['s', 'a', 'n', 's'];
+var current_toby = 0;
+
+var keyHandlerSans = function (event) {
+
+    // If the key isn't in the pattern, or isn't the current key in the pattern, reset
+    if (pattern_toby.indexOf(event.key) < 0 || event.key !== pattern_toby[current_toby]) {
+        current_toby = 0;
+        return;
+    }
+
+    // Update how much of the pattern is complete
+    current_toby++;
+
+    // If complete, alert and reset
+    if (pattern_toby.length === current_toby) {
+        current_toby = 0;
+        document.location.replace('/sans');
     }
 
 };
