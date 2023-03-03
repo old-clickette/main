@@ -281,7 +281,7 @@ var keyHandlerSans = function (event) {
     // If complete, alert and reset
     if (pattern_toby.length === current_toby) {
         current_toby = 0;
-        document.location.replace('/bad-time');
+        document.location.replace('/bad-time'); // hehe
     }
 
 };
