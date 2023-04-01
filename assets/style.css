@@ -15,7 +15,7 @@
 
 @font-face{font-family:comic sans;font-style:normal;font-weight:400;src:local('Comic Sans'),url(https://fonts.cdnfonts.com/s/37767/COMICSANS.woff) format('woff')}@font-face{font-family:comic sans;font-style:italic;font-weight:400;src:local('Comic Sans'),url(https://fonts.cdnfonts.com/s/37767/COMICSANSITALIC.woff) format('woff')}@font-face{font-family:comic sans;font-style:normal;font-weight:700;src:local('Comic Sans'),url(https://fonts.cdnfonts.com/s/37767/COMICSANSBOLD.woff) format('woff')}@font-face{font-family:comic sans;font-style:italic;font-weight:700;src:local('Comic Sans'),url(https://fonts.cdnfonts.com/s/37767/COMICSANSBOLDITALIC.woff) format('woff')}
 
-.trololo {
+* {
   font-family: 'Comic Sans', sans-serif !important;
 }
 
