@@ -14,7 +14,7 @@
 }
 
 .trololo {
-  font-family: cursive;
+  font-family: cursive !important;
 }
 
 /* ===== Scrollbar CSS ===== */
