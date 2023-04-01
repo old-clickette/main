@@ -12,6 +12,11 @@
   src: url('https://fonts.cdnfonts.com/s/14898/GothamMedium.woff') format('woff');
   font-display: swap;
 }
+
+.trololo {
+  font-family: cursive;
+}
+
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
   * {
