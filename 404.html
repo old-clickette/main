@@ -41,14 +41,14 @@
   <img src="/assets/img/logo.png" alt="Clickette Logo">
   </div>
   <h1>Error 404 - Page Not Found</h1>
-  <p>Redirecting to homepage in <span id="sec">5</span> seconds</p>
+  <p>Redirecting back in <span id="sec">5</span> seconds</p>
   <script>
     var timeleft = 5;
     setInterval(function(){
     timeleft--;
     document.getElementById("sec").textContent = timeleft;
       if(timeleft<=0) {
-        window.location.href = '/';
+        history.back();
       }
     },1000);
   </script>
